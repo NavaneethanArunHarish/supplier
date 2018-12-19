@@ -1,0 +1,76 @@
+.headerGray {
+    color: #868e96 !important;
+}
+
+.headerleft {
+    margin-left: 0px;
+    margin-top: 25px;
+}
+
+.offerLabel {
+    color:#FF7800;
+}
+
+.themeBtnColor {
+    background-color: #FF7800;
+    border-color: #FF7800;
+    margin: 25px;
+    color:#fff;
+}
+
+.themeLabelColor {
+    color:#FF7800;
+}
+
+.inlineBlock {
+    display:inline-block;
+}
+
+.headerCardBody {
+    margin-top: 60px;
+}
+
+.tableHeader {
+    color: #868e96 !important;
+    font-size: 13px;
+}
+
+.borderless td, .borderless th {
+    border: none;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.noExpiryGray {
+    color: #4B4A4A;
+}
+
+.progress-bar-success {
+    background-color: #5cb85c;
+    border-radius: 20px;
+}
+
+.progress-bar-warning {
+    background-color: #f0ad4e;
+    border-radius: 20px;
+}
+
+.progress-bar-danger {
+    background-color: #d9534f;
+    border-radius: 20px;
+}
+
+.mat-ink-bar {
+    position: absolute;
+    top: 0;
+    height: 2px;
+    transition: .5s cubic-bezier(.35,0,.25,1);
+visibility: visible; 
+    left: 0px;
+    width: 160px; 
+}

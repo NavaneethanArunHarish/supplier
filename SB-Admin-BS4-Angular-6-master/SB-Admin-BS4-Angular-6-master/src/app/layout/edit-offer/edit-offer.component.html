@@ -1,0 +1,99 @@
+<div [@routerTransition]>
+  <div class="row headerleft">
+    <label class="headerGray">DASHBOARD / OFFERS /</label>&nbsp;
+    <label> EDIT OFFER</label>
+  </div>
+</div>
+<div class="headerleft">
+  <label class="offerLabel">EDIT OFFER - POTATO | G1234</label>
+</div>
+<div class="row headerCardBody">
+  <div class="col-xl-12 text-xs-center">
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5> Enter Offer Details</h5>
+        <div class="row">
+          <div class="col-lg-6">
+
+            <form role="form">
+
+              <fieldset class="form-group">
+                <label><strong>Product</strong></label>
+                <select class="form-control" placeholder="Select a Product you want to offer">
+                  <option>POTATO</option>
+                  <option>TOMATO</option>
+                  <option>ORANGE</option>
+                </select>
+              </fieldset>
+
+              <fieldset class="form-group">
+                <label><strong>Quantity</strong></label>
+                <input class="form-control" type="number" min="1" max="5">
+              </fieldset>
+
+              <fieldset class="form-group">
+                <label><strong>Expiry Date</strong></label>
+                <div class="input-group datepicker-input">
+                  <input class="form-control" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
+                  <button class="input-group-addon" (click)="d.toggle()" type="button">
+                    <!-- <img src="img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;"/> -->
+                    <span class="fa fa-calendar"></span>
+                  </button>
+                </div>
+              </fieldset>
+
+              <fieldset class="form-group">
+                <label><strong>Price</strong></label>
+                <input class="form-control">
+              </fieldset>
+            </form>
+          </div>
+          <div class="col-lg-6">
+            <form role="form">
+              <fieldset class="form-group">
+                <div class="form-group">
+                  <label><strong>Product Attributes</strong></label>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value=""> Farm fresh
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value=""> Organic
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" value=""> Preservatives added
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="form-group">
+                <label><strong>Perishable?</strong></label>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked=""> Yes
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> No
+                  </label>
+                </div>
+              </fieldset>
+              <fieldset class="form-group">
+                <label><strong>Sub Offers</strong></label><br/>
+                <span>Nil</span>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <div class="align-items-center">
+          <button type="submit" class="btn themeBtnColor">SAVE </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

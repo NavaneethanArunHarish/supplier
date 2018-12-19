@@ -1,0 +1,65 @@
+<div [@routerTransition]>
+    <div class="row headerleft">
+        <label class="headerGray">DASHBOARD /</label>&nbsp;
+        <label> OFFERS</label>
+    </div>
+</div>
+<div class="headerleft">
+    <label class="offerLabel">OFFERS</label>
+    <div class="pull-right">
+        <button type="submit" class="btn themeBtnColor" [routerLink]="['/create-offer']">CREATE OFFER</button>
+    </div>
+</div>
+
+<div class="row headerCardBody">
+    <div class="col-xl-12 text-xs-center">
+        <div class="card mb-3">
+            <div class="card-body">
+                <mat-tab-group>
+                    <mat-tab label="{{ 'Ongoing' | translate }}">
+                        <br />
+                        <div class="row">
+                            <div class="col-sm-6" *ngFor="let offer of dashboardOffer">
+                                <div class="card mb-3">
+                                    <div class="card-header bg-light">
+                                        <img src="{{offer.product.imageUrl}}" class="avatar">
+                                        {{offer.product.name}}
+                                        <div class="pull-right">VIEW FULL DETAILS</div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table borderless">
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="tableHeader">Offers</th>
+                                                        <th class="tableHeader">Sub-offers</th>
+                                                        <th class="tableHeader">Price</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>5</td>
+                                                        <td>{{offer.price}}/ kg</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="tableHeader">Quantity available</th>
+                                                        <th class="tableHeader">Quantity sold</th>
+                                                        <th class="tableHeader">Last Offer ended on</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>{{offer.quantity}}</td>
+                                                        <td>{{offer.quantitySold}}</td>
+                                                        <td>{{offer.ended | date:'MM/dd/yyyy'}}</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-tab>
+                </mat-tab-group>
+            </div>
+        </div>
+    </div>
+</div>

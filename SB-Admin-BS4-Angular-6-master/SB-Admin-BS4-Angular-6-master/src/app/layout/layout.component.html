@@ -1,0 +1,31 @@
+<app-header></app-header>
+<app-sidebar (collapsedEvent)="receiveCollapsed($event)"></app-sidebar>
+<section class="main-container" [ngClass]="{collapsed: collapedSideBar}">
+    <router-outlet></router-outlet>
+</section>
+  <!-- Footer -->
+<footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+            <div class="table-responsive">
+                    <table class="table borderless">
+                      <tbody>
+                        <tr>
+                          <td><div><img src="../../assets/images/Components/ic_offers_tab_inactive@2x.png" class="img-responsive"></div></td>
+                          <td><div><img src="../../assets/images/Components/ic_orders_tab_inactive@2x.png" class="img-responsive"></div></td>
+                          <td><div><img src="../../assets/images/Components/ic_archive_tab_inactive@2x.png" class="img-responsive"></div></td>
+                        </tr>
+                        <tr>
+                          <td class="tableHeader">{{ 'Offer' | translate }}</td>
+                          <td class="tableHeader">{{ 'Order' | translate }}</td>
+                          <td class="tableHeader">{{ 'Archive' | translate }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
