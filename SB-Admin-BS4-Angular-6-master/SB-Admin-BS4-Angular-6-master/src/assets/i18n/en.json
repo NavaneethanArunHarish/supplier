@@ -43,5 +43,21 @@
     "Noexpiry":"no expiry",
     "Change Price":"CHANGE PRICE",
     "Order":"Orders",
-    "Archive":"Archive"
+    "Archive":"Archive",
+    "Show History":"Show History",
+    "Edit Quantity":"Edit Quantity",
+    "Terminate Early":"Terminate Early",
+    "No Expiry":"NO EXPIRY",
+    "Terminate Date":"The offer will not end until you terminate it or add an end date.",
+    "Add End Date":"ADD END DATE",
+    "Filter":"Filters",
+    "Reset":"RESET",
+    "Apply":"APPLY",
+    "Discount":"Discounts",
+    "Expiry":"Expiry",
+    "With":"With",
+    "Without":"Without"
+
+
+
 }

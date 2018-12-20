@@ -70,7 +70,18 @@
     top: 0;
     height: 2px;
     transition: .5s cubic-bezier(.35,0,.25,1);
-visibility: visible; 
+    visibility: visible; 
     left: 0px;
     width: 160px; 
+}
+
+.align-center {
+    text-align: center;
+}
+
+.filter-align {
+    margin-top:6px
+}
+.filter-img-align {
+    margin-top:10px
 }

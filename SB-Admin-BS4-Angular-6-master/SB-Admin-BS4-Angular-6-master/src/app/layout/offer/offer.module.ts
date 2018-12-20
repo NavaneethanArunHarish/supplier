@@ -6,6 +6,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OfferRoutingModule } from './offer-routing';
 import { OfferComponent } from './offer.component';
+// import { DialogComponent } from '../dialog/dialog.component';
 import { MaterialModule } from '../../material/material.module';
 import { ProgressBarModule } from "angular-progress-bar";
 
@@ -17,5 +18,6 @@ import { ProgressBarModule } from "angular-progress-bar";
         MaterialModule,
         NgbModule.forRoot()],
     declarations: [OfferComponent]
+    // exports: [ OfferComponent,DialogComponent ]
 })
 export class OfferModule { } 

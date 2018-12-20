@@ -16,10 +16,52 @@
     <div class="card mb-3">
       <div class="card-body">
         <div class="pull-right">
-            <img src="../../../assets/images/Components/ic_filters_inactive@2x.png" class="img-responsive">&nbsp;&nbsp;&nbsp;&nbsp;
-            <img src="../../../assets/images/Components/ic_search_inactive@2x.png" class="img-responsive">
+          <img src="../../../assets/images/Components/ic_filters_active@2x.png" class="img-responsive" (click)="filterEnable=!filterEnable">&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="../../../assets/images/Components/ic_search_active@2x.png" class="img-responsive">
         </div>
-        <br/><br/>
+        <br /><br />
+        <div *ngIf="filterEnable === true">
+          <div class="row">
+            <div class="col-sm-12" [ngbCollapse]="isCollapsed">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <div>
+                    <div class="pull-left">
+                      <img src="../../../assets/images/Components/ic_filters_active.png" class="img-responsive filter-img-align">
+                    </div>&nbsp;&nbsp;
+                    <label class="filter-align">{{ 'Filter' | translate }}</label>
+                    <div class="pull-right">
+                      <button mat-button><span>{{ 'Reset' | translate }}</span></button>
+                      <button mat-button><span>{{ 'Apply' | translate }}</span></button>
+                    </div><br />
+                    <div>
+                      <label><strong>{{ 'Discount' | translate }}</strong></label><br />
+                      <mat-radio-group>
+                        <mat-radio-button value="1"><label class="tableHeader">{{ 'With' | translate }}</label></mat-radio-button>&nbsp;&nbsp;
+                        <mat-radio-button value="2"><label class="tableHeader">{{ 'Without' | translate }}</label></mat-radio-button>
+                      </mat-radio-group>
+                    </div>
+                    <div>
+                      <label><strong>{{ 'Quantity' | translate }}</strong></label><br />
+                      <mat-radio-group>
+                        <mat-radio-button value="1"><label class="tableHeader">&gt; 50% Sold</label></mat-radio-button>&nbsp;&nbsp;
+                        <mat-radio-button value="2"><label class="tableHeader">&gt; 50% Available</label></mat-radio-button>
+                      </mat-radio-group>
+                    </div>
+                    <div>
+                      <label><strong>{{ 'Expiry' | translate }}</strong></label><br />
+                      <mat-radio-group>
+                        <mat-radio-button value="1"><label class="tableHeader">&lt; 5 Days to expire</label></mat-radio-button>&nbsp;&nbsp;
+                        <mat-radio-button value="2"><label class="tableHeader">&gt; 5 Days to expire</label></mat-radio-button>
+                      </mat-radio-group>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br /><br />
+        </div>
         <mat-tab-group>
           <mat-tab label="{{ 'Ongoing' | translate }}">
             <br />
@@ -30,8 +72,39 @@
                     <img src="https://greenmylife-wpengine.netdna-ssl.com/wp-content/uploads/2014/02/Carrot.jpg" class="avatar">
                     APPLE&nbsp;
                     <label class="noExpiryGray">{{ 'Noexpiry' | translate }}</label>&nbsp;&nbsp;
-                    <img src="../../../assets/images/Components/ic_more_info_small_orange@2x.png" class="img-responsive">
-                    <div class="pull-right"><img src="../../../assets/images/Components/ic_more_options@2x.png" class="img-responsive"></div>
+                    <img src="../../../assets/images/Components/ic_more_info_small_orange@2x.png" (click)="open(content)"
+                      class="img-responsive">
+                    <ng-template #content let-c="close" let-d="dismiss">
+                      <div class="modal-header">
+                        <h5 class="modal-title tableHeader"><img src="../../../assets/images/Components/ic_more_info_black.png"
+                            class="img-responsive">&nbsp;&nbsp;{{ 'No Expiry' | translate }}</h5>
+                        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p>{{ 'Terminate Date' | translate }}</p><br />
+                        <div class="align-center">
+                          <a href="javascript:void(0)">{{ 'Add End Date' | translate }}</a>
+                        </div>
+                      </div>
+                      <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" (click)="c('Close click')">Close</button>
+                      </div> -->
+                    </ng-template>
+                    <div class="pull-right">
+                      <!-- menu opens when trigger button is clicked -->
+                      <button mat-icon-button [matMenuTriggerFor]="menu">
+                        <mat-icon>more_vert</mat-icon>
+                      </button>
+
+                      <mat-menu #menu="matMenu">
+                        <button mat-menu-item>{{ 'Show History' | translate }}</button>
+                        <button mat-menu-item>{{ 'Edit Quantity' | translate }}</button>
+                        <button mat-menu-item>{{ 'Terminate Early' | translate }}</button>
+                      </mat-menu>
+
+                    </div>
                   </div>
                   <div class="card-body">
                     <div>
@@ -56,8 +129,18 @@
                     <img src="https://greenmylife-wpengine.netdna-ssl.com/wp-content/uploads/2014/02/Carrot.jpg" class="avatar">
                     TOMATO&nbsp;
                     <label class="noExpiryGray">end in 3 days</label>&nbsp;&nbsp;
-                    <!-- <img src="../../../assets/images/Components/ic_more_info_small_orange@2x.png" class="img-responsive"> -->
-                    <div class="pull-right"><img src="../../../assets/images/Components/ic_more_options@2x.png" class="img-responsive"></div>
+                    <div class="pull-right">
+                      <!-- menu opens when trigger button is clicked -->
+                      <button mat-icon-button [matMenuTriggerFor]="menu">
+                        <mat-icon>more_vert</mat-icon>
+                      </button>
+
+                      <mat-menu #menu="matMenu">
+                        <button mat-menu-item>{{ 'Show History' | translate }}</button>
+                        <button mat-menu-item>{{ 'Edit Quantity' | translate }}</button>
+                        <button mat-menu-item>{{ 'Terminate Early' | translate }}</button>
+                      </mat-menu>
+                    </div>
                   </div>
                   <div class="card-body">
                     <div>
@@ -82,8 +165,18 @@
                     <img src="https://greenmylife-wpengine.netdna-ssl.com/wp-content/uploads/2014/02/Carrot.jpg" class="avatar">
                     ORANGE&nbsp;
                     <label class="noExpiryGray">end in 2 days</label>&nbsp;&nbsp;
-                    <!-- <img src="../../../assets/images/Components/ic_more_info_small_orange@2x.png" class="img-responsive"> -->
-                    <div class="pull-right"><img src="../../../assets/images/Components/ic_more_options@2x.png" class="img-responsive"></div>
+                    <div class="pull-right">
+                      <!-- menu opens when trigger button is clicked -->
+                      <button mat-icon-button [matMenuTriggerFor]="menu">
+                        <mat-icon>more_vert</mat-icon>
+                      </button>
+
+                      <mat-menu #menu="matMenu">
+                        <button mat-menu-item>{{ 'Show History' | translate }}</button>
+                        <button mat-menu-item>{{ 'Edit Quantity' | translate }}</button>
+                        <button mat-menu-item>{{ 'Terminate Early' | translate }}</button>
+                      </mat-menu>
+                    </div>
                   </div>
                   <div class="card-body">
                     <div>

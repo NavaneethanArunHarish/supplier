@@ -42,5 +42,18 @@
     "Noexpiry":"kein Ablauf",
     "Change Price":"PREIS ÄNDERN",
     "Order":"Aufträge",
-    "Archive":"Archiv"
+    "Archive":"Archiv",
+    "Show History":"Zeige die Geschichte",
+    "Edit Quantity":"Menge bearbeiten",
+    "Terminate Early":"Vorzeitig beenden",
+    "No Expiry":"KEIN VERFALL",
+    "Terminate Date":"Das Angebot endet erst, wenn Sie es kündigen oder ein Enddatum hinzufügen.",
+    "Add End Date":"ADD END DATE",
+    "Filter":"Filter",
+    "Reset":"RESET",
+    "Apply":"SICH BEWERBEN",
+    "Discount":"Rabatte",
+    "Expiry":"Ablauf",
+    "With":"Mit",
+    "Without":"Ohne"
 }
