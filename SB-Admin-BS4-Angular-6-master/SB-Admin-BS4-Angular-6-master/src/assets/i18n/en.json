@@ -27,6 +27,7 @@
     "Offer": "Offers",
     "Offer Details":"Here, you can find all the existing and scheduled offers of the products you own. For more details on offers, click",
     "Create Offer":"CREATE NEW OFFER",
+    "Update Offer":"UPDATE OFFER",
     "Here":"here.",
     "Create New Offer":"Create New Offer",
     "Create Offer Details":"Here, you can create a new offer for the products you own. For more details on how to, click",
@@ -56,7 +57,9 @@
     "Discount":"Discounts",
     "Expiry":"Expiry",
     "With":"With",
-    "Without":"Without"
+    "Without":"Without",
+    "End Date Add":"Add end date",
+    "Select Date":"Select a date for the offer to end."
 
 
 

@@ -27,6 +27,7 @@
     "Offer": "Angebot",
     "Offer Details":"Hier finden Sie alle vorhandenen und geplanten Angebote der Produkte, die Sie besitzen. Für weitere Informationen zu Angeboten klicken Sie auf",
     "Create Offer":"NEUES ANGEBOT ERSTELLEN",
+    "Update Offer":"UPDATE-ANGEBOT",
     "Here":"hier.",
     "Create New Offer":"Neues Angebot erstellen",
     "Create Offer Details":"Hier können Sie ein neues Angebot für die Produkte erstellen, die Sie besitzen. Klicken Sie auf, um weitere Informationen zu erhalten",
@@ -55,5 +56,7 @@
     "Discount":"Rabatte",
     "Expiry":"Ablauf",
     "With":"Mit",
-    "Without":"Ohne"
+    "Without":"Ohne",
+    "End Date Add":"Enddatum hinzufügen",
+    "Select Date":"Wählen Sie ein Datum, an dem das Angebot enden soll."
 }

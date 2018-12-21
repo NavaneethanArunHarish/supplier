@@ -18,7 +18,8 @@ const routes: Routes = [
             { path: 'blank-page', loadChildren: './blank-page/blank-page.module#BlankPageModule' },
             { path: 'create-offer', loadChildren: './create-new-offer/create-new-offer.module#CreateNewOfferModule' },
             { path: 'offers', loadChildren: './offer/offer.module#OfferModule' },
-            { path: 'edit-offer', loadChildren: './edit-offer/edit-offer.module#EditOfferModule' }
+            { path: 'edit-offer', loadChildren: './edit-offer/edit-offer.module#EditOfferModule' },
+            { path: 'add-end-date', loadChildren: './add-end-date/add-end-date.component.module#AddEndDateModule' }
         ]
     }
 ];

@@ -4,18 +4,18 @@ import { TranslateModule } from '@ngx-translate/core';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { OfferRoutingModule } from './offer-routing';
-import { OfferComponent } from './offer.component';
+import { AddEndDateRoutingModule } from './add-end-date.component.routing';
+import { AddEndDateComponent } from './add-end-date.component';
 import { MaterialModule } from '../../material/material.module';
 import { ProgressBarModule } from "angular-progress-bar";
 
 @NgModule({
-    imports: [CommonModule, OfferRoutingModule, FormsModule,
+    imports: [CommonModule, AddEndDateRoutingModule, FormsModule,
         ReactiveFormsModule,
         TranslateModule,
         ProgressBarModule,
         MaterialModule,
         NgbModule.forRoot()],
-    declarations: [OfferComponent]
+    declarations: [AddEndDateComponent]
 })
-export class OfferModule { } 
+export class AddEndDateModule { } 

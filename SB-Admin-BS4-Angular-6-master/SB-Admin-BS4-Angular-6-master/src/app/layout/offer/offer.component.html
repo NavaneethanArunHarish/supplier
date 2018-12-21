@@ -85,7 +85,7 @@
                       <div class="modal-body">
                         <p>{{ 'Terminate Date' | translate }}</p><br />
                         <div class="align-center">
-                          <a href="javascript:void(0)">{{ 'Add End Date' | translate }}</a>
+                          <a href="javascript:void(0)" aria-label="Close" (click)="d('Cross click')" [routerLink]="['/add-end-date']">{{ 'Add End Date' | translate }}</a>
                         </div>
                       </div>
                       <!-- <div class="modal-footer">

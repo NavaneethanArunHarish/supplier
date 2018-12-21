@@ -7,7 +7,12 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import {MatRadioModule} from '@angular/material/radio';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatListModule } from '@angular/material/list';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatNativeDateModule } from '@angular/material';
 
 @NgModule({
   imports: [
@@ -19,7 +24,12 @@ import {MatRadioModule} from '@angular/material/radio';
     MatMenuModule,
     MatIconModule,
     MatButtonModule,
-    MatRadioModule
+    MatRadioModule,
+    MatDividerModule,
+    MatDatepickerModule,
+    MatListModule,
+    MatFormFieldModule,
+    MatNativeDateModule
   ],
   exports: [
     MatInputModule,
@@ -29,7 +39,12 @@ import {MatRadioModule} from '@angular/material/radio';
     MatMenuModule,
     MatIconModule,
     MatButtonModule,
-    MatRadioModule
+    MatRadioModule,
+    MatDividerModule,
+    MatDatepickerModule,
+    MatListModule,
+    MatFormFieldModule,
+    MatNativeDateModule
   ],
   declarations: []
 })
