@@ -17,9 +17,19 @@
       <div class="card-body">
         <div class="pull-right">
           <img src="../../../assets/images/Components/ic_filters_active@2x.png" class="img-responsive" (click)="filterEnable=!filterEnable">&nbsp;&nbsp;&nbsp;&nbsp;
-          <img src="../../../assets/images/Components/ic_search_active@2x.png" class="img-responsive">
+          <img src="../../../assets/images/Components/ic_search_active@2x.png" class="img-responsive" (click)="searchEnable=!searchEnable">
         </div>
         <br /><br />
+        <div *ngIf="searchEnable === true">
+          <form role="form">
+            <div class="form-group input-group">
+              <input type="text" class="form-control" placeholder="search by product name">
+              <div class="input-group-append">
+                <button class="btn btn-secondary" type="button"><i class="fa fa-search"></i></button>
+              </div>
+            </div>
+          </form>
+        </div>
         <div *ngIf="filterEnable === true">
           <div class="row">
             <div class="col-sm-12" [ngbCollapse]="isCollapsed">
@@ -85,7 +95,8 @@
                       <div class="modal-body">
                         <p>{{ 'Terminate Date' | translate }}</p><br />
                         <div class="align-center">
-                          <a href="javascript:void(0)" aria-label="Close" (click)="d('Cross click')" [routerLink]="['/add-end-date']">{{ 'Add End Date' | translate }}</a>
+                          <a href="javascript:void(0)" aria-label="Close" (click)="d('Cross click')" [routerLink]="['/add-end-date']">{{
+                            'Add End Date' | translate }}</a>
                         </div>
                       </div>
                       <!-- <div class="modal-footer">
@@ -100,7 +111,7 @@
 
                       <mat-menu #menu="matMenu">
                         <button mat-menu-item>{{ 'Show History' | translate }}</button>
-                        <button mat-menu-item>{{ 'Edit Quantity' | translate }}</button>
+                        <button mat-menu-item [routerLink]="['/edit-quantity']">{{ 'Edit Quantity' | translate }}</button>
                         <button mat-menu-item>{{ 'Terminate Early' | translate }}</button>
                       </mat-menu>
 

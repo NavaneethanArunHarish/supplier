@@ -19,7 +19,7 @@
                     <mat-tab label="{{ 'Ongoing' | translate }}">
                         <br />
                         <div class="row">
-                            <div class="col-sm-6" *ngFor="let offer of dashboardOffer">
+                            <!-- <div class="col-sm-6" *ngFor="let offer of dashboardOffer">
                                 <div class="card mb-3">
                                     <div class="card-header bg-light">
                                         <img src="{{offer.product.imageUrl}}" class="avatar">
@@ -52,6 +52,69 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="col-sm-6" [ngbCollapse]="isCollapsed" *ngFor="let offer of dashboardOffer">
+                                <div class="card mb-3">
+                                    <div class="card-header bg-warning">
+                                        <img src="{{offer.product.imageUrl}}" class="avatar">
+                                        {{offer.product.name}}&nbsp;
+                                        <label class="noExpiryGray">{{ 'Noexpiry' | translate }}</label>&nbsp;&nbsp;
+                                        <img src="../../../assets/images/Components/ic_more_info_small_orange@2x.png"
+                                            (click)="open(content)" class="img-responsive">
+                                        <ng-template #content let-c="close" let-d="dismiss">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title tableHeader"><img src="../../../assets/images/Components/ic_more_info_black.png"
+                                                        class="img-responsive">&nbsp;&nbsp;{{ 'No Expiry' | translate
+                                                    }}</h5>
+                                                <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>{{ 'Terminate Date' | translate }}</p><br />
+                                                <div class="align-center">
+                                                    <a href="javascript:void(0)" aria-label="Close" (click)="d('Cross click')"
+                                                        [routerLink]="['/add-end-date']">{{ 'Add End Date' | translate
+                                                        }}</a>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" (click)="c('Close click')">Close</button>
+                                          </div> -->
+                                        </ng-template>
+                                        <div class="pull-right">
+                                            <!-- menu opens when trigger button is clicked -->
+                                            <button mat-icon-button [matMenuTriggerFor]="menu">
+                                                <mat-icon>more_vert</mat-icon>
+                                            </button>
+
+                                            <mat-menu #menu="matMenu">
+                                                <button mat-menu-item>{{ 'Show History' | translate }}</button>
+                                                <button mat-menu-item [routerLink]="['/edit-quantity']">{{ 'Edit
+                                                    Quantity' | translate }}</button>
+                                                <button mat-menu-item>{{ 'Terminate Early' | translate }}</button>
+                                            </mat-menu>
+
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div>
+                                            <label class="tableHeader"><strong>{{ 'Quantity' | translate }}</strong></label>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-success" role="progressbar"
+                                                    aria-valuenow="offer.quantitySold" aria-valuemin="0" aria-valuemax="offer.quantity"
+                                                    style="width:4%">
+                                                </div>
+                                            </div>
+                                            <br />
+                                            <label>Sold {{offer.quantitySold}} kgs</label>&nbsp;&nbsp;<label>Available
+                                                {{offer.quantity}} kgs</label><br />
+                                            <label class="tableHeader"><strong>{{ 'Price' | translate }}</strong></label><br />
+                                            <label>{{offer.price}} per box</label><br />
+                                            <h5 class="themeLabelColor">{{ 'Change Price' | translate }}</h5>
                                         </div>
                                     </div>
                                 </div>

@@ -9,7 +9,8 @@ import { TranslateModule } from '@ngx-translate/core';
 import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input'; 
-import { MaterialModule } from '../../material/material.module';  
+import { MaterialModule } from '../../material/material.module';
+import { ProgressBarModule } from "angular-progress-bar"; 
 import { ApiheaderService } from '../util/api-header';
 import {
     TimelineComponent,
@@ -27,6 +28,7 @@ import { StatModule } from '../../shared';
         DashboardRoutingModule,
         StatModule,
         HttpClientModule,
+        ProgressBarModule,
         TranslateModule,
         FormsModule, 
         ReactiveFormsModule,

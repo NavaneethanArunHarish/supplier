@@ -4,21 +4,21 @@ import { TranslateModule } from '@ngx-translate/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardService } from '../service/dashboard.js';
-import { CreateNewOfferRoutingModule } from './create-new-offer-routing';
-import { CreateNewOfferComponent } from './create-new-offer.component';
+import { CreateOfferStep3RoutingModule } from './create-offer-step3-routing';
+import { CreateOfferStep3Component } from './create-offer-step3.component';
 import { ApiheaderService } from '../util/api-header';
 import { MaterialModule } from '../../material/material.module';
 
 @NgModule({
-    imports: [CommonModule, CreateNewOfferRoutingModule, FormsModule,
+    imports: [CommonModule, CreateOfferStep3RoutingModule, FormsModule,
         ReactiveFormsModule,
         TranslateModule,
         MaterialModule,
         NgbModule.forRoot()],
-    declarations: [CreateNewOfferComponent],
+    declarations: [CreateOfferStep3Component],
     providers: [
         DashboardService,
         ApiheaderService
     ]
 })
-export class CreateNewOfferModule { } 
+export class CreateOfferStep3Module { } 

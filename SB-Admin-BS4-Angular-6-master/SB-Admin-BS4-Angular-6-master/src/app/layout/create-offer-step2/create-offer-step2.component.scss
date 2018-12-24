@@ -35,7 +35,19 @@
     font-size: 12px;
 }
 
+.tableHeaderColor {
+    background-color:#FF7800;
+    color:#BABEC5;
+    font-size: 12px;
+}
+
 .tableBody {
+    color: #424D5D;
+    font-size: 14px;
+}
+
+.tableBodyColor {
+    background-color:#FF7800;
     color: #424D5D;
     font-size: 14px;
 }
@@ -62,4 +74,17 @@
 .product-style {
     color: #2D3A4C;
     font-size: 14px;
+}
+
+.label-style {
+    color:#2D3A4C;
+    font-size: 14px;
+}
+
+.slider-div {
+    background-color:#F1F5F7;
+}
+
+.inlineBlock {
+    display:inline-block;
 }

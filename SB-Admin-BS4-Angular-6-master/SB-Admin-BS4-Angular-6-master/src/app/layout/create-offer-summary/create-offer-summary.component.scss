@@ -7,8 +7,18 @@
     margin-top: 25px;
 }
 
+.offer-label {
+    color:#2D3A4C;
+    font-size: 20px;
+}
+
 .offerLabel {
     color:#FF7800;
+}
+
+.help-label {
+    color:#838A95;
+    font-size: 14px;
 }
 
 .themeBtnColor {
@@ -35,7 +45,19 @@
     font-size: 12px;
 }
 
+.tableHeaderColor {
+    background-color:#FF7800;
+    color:#BABEC5;
+    font-size: 12px;
+}
+
 .tableBody {
+    color: #424D5D;
+    font-size: 14px;
+}
+
+.tableBodyColor {
+    background-color:#FF7800;
     color: #424D5D;
     font-size: 14px;
 }
@@ -46,6 +68,11 @@
     font-size: 14px;
 }
 
+.help-align {
+    color:#2D3A4C;
+    font-size: 12px;
+}
+
 .catalog-align {
     text-align: center;
     color:#BABEC5;
@@ -54,8 +81,8 @@
 
 .avatar {
     vertical-align: middle;
-    width: 100px;
-    height: 100px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
 }
 
@@ -63,3 +90,21 @@
     color: #2D3A4C;
     font-size: 14px;
 }
+
+.label-style {
+    color:#2D3A4C;
+    font-size: 14px;
+}
+
+.slider-div {
+    background-color:#F1F5F7;
+}
+
+.inlineBlock {
+    display:inline-block;
+}
+
+.margin-align {
+    margin-top: 35px;
+}
+

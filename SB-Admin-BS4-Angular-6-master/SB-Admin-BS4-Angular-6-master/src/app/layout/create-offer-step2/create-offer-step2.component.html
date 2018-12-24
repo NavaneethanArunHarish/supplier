@@ -1,0 +1,107 @@
+<div [@routerTransition]>
+    <div class="row headerCardBody">
+        <div class="col-xl-12 text-xs-center">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="col-md-12">
+                                <div class="table-responsive">
+                                    <table class="table borderless slider-div">
+                                        <tbody>
+                                            <tr>
+                                                <th class="tableHeader">{{ 'Product' | translate }} &nbsp;&nbsp;<img
+                                                        src="../../../assets/images/Components/ic_tick_dark.png" class="img-responsive"></th>
+                                                <th class="tableHeader">{{ 'Price' | translate }}</th>
+                                                <th class="tableHeader">{{ 'Quantity' | translate }}</th>
+                                            </tr>
+                                            <tr>
+                                                <th class="tableBody">Chicken Eggs</th>
+                                                <th class="tableBody">TBD</th>
+                                                <th class="tableBody">TBD</th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- <div class="inlineBlock" style="text-align:center">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <h3 class="tableHeader">{{ 'Product' | translate }}</h3>
+                                        <h3 class="tableBody">Chicken Eggs</h3>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <h3 class="tableHeader">{{ 'Price' | translate }}</h3>
+                                        <h3 class="tableBody">TBD</h3>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <h3 class="tableHeader">{{ 'Quantity' | translate }}</h3>
+                                        <h3 class="tableBody">TBD</h3>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                            <br />
+                            <div>
+                                <h3 class="step-align">{{ 'Step2' | translate }}</h3>
+                            </div>
+                            <div>
+                                <h3 class="catalog-align">{{ 'Product Price Offer' | translate }}</h3>
+                            </div>
+                            <br />
+                            <div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <form role="form">
+                                            <h3 class="label-style">{{ 'Price' | translate }}</h3>
+                                            <div class="form-group input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="basic-addon1"><i class="fa fa-eur"></i></span>
+                                                </div>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <h3 class="label-style">{{ 'Unit' | translate }}</h3>
+                                            <select class="form-control">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <form role="form">
+                                            <fieldset class="form-group">
+                                                <h3 class="label-style">{{ 'Quantity' | translate }}</h3>
+                                                <input class="form-control">
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                                <br /><br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="col-xl-3 text-xs-center">
+                            <button type="submit" class="btn themeBtnColor" [routerLink]="['/create-offer']">&lt; {{
+                                'Back' | translate }} </button>
+                        </div>
+                        <div class="col-xl-3 text-xs-center">
+                            <button type="submit" class="btn themeBtnColor" [routerLink]="['/create-offer-step3']">{{
+                                'Next' | translate }} &gt; </button>
+                        </div>
+                        <div class="col-xl-3 text-xs-center">
+                            <button type="submit" class="btn themeBtnColor">{{ 'Cancel' | translate }}</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

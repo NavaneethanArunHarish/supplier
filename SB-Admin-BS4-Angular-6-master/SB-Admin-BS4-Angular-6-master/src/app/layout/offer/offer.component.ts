@@ -14,6 +14,7 @@ export class OfferComponent implements OnInit {
   myHeight: any;
   closeResult: string;
   filterEnable: boolean = false;
+  searchEnable: boolean = false;
   constructor(private translate: TranslateService, private modalService: NgbModal) {
 
   }
