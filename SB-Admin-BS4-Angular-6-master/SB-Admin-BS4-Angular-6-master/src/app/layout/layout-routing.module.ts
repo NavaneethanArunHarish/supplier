@@ -21,9 +21,11 @@ const routes: Routes = [
             { path: 'create-offer-step3', loadChildren: './create-offer-step3/create-offer-step3.module#CreateOfferStep3Module' },
             { path: 'create-offer-summary', loadChildren: './create-offer-summary/create-offer-summary.module#CreateOfferSummaryModule' },
             { path: 'offers', loadChildren: './offer/offer.module#OfferModule' },
+            { path: 'offer-history', loadChildren: './offer-history/offer-history.module#OfferHistoryModule' },
             { path: 'edit-offer', loadChildren: './edit-offer/edit-offer.module#EditOfferModule' },
             { path: 'edit-quantity', loadChildren: './edit-quantity/edit-quantity.module#EditQuantityModule' },
-            { path: 'add-end-date', loadChildren: './add-end-date/add-end-date.component.module#AddEndDateModule' }
+            { path: 'add-end-date', loadChildren: './add-end-date/add-end-date.component.module#AddEndDateModule' },
+            { path: 'change-price', loadChildren: './change-price/change.price.module#ChangePriceModule' }
         ]
     }
 ];

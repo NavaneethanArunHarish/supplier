@@ -92,7 +92,7 @@
                                             </button>
 
                                             <mat-menu #menu="matMenu">
-                                                <button mat-menu-item>{{ 'Show History' | translate }}</button>
+                                                <button mat-menu-item [routerLink]="['/offer-history']">{{ 'Show History' | translate }}</button>
                                                 <button mat-menu-item [routerLink]="['/edit-quantity']">{{ 'Edit
                                                     Quantity' | translate }}</button>
                                                 <button mat-menu-item>{{ 'Terminate Early' | translate }}</button>
@@ -106,7 +106,7 @@
                                             <div class="progress">
                                                 <div class="progress-bar progress-bar-success" role="progressbar"
                                                     aria-valuenow="offer.quantitySold" aria-valuemin="0" aria-valuemax="offer.quantity"
-                                                    style="width:4%">
+                                                  [style.width]="offer.quantitySold + '%'">
                                                 </div>
                                             </div>
                                             <br />

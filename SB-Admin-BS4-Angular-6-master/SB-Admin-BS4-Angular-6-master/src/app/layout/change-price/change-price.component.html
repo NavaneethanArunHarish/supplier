@@ -3,7 +3,7 @@
         <div class="card mb-3">
             <div class="card-body">
                 <div class="row headerleft">
-                    <h3 class="header-label">{{ 'Edit Quantity' | translate }}</h3>
+                    <h3 class="header-label">{{ 'Change-Price' | translate }}</h3>
                 </div>
                 <br />
                 <br />
@@ -31,6 +31,26 @@
                 <br />
                 <mat-divider></mat-divider>
                 <div class="card-align">
+                    <div class="pull-left">
+                        <label class="tableHeader">{{ 'Current Price' | translate }}</label>
+                    </div>
+                    <div class="pull-right">
+                        <label class="content-label"><i class="fa fa-eur"></i>&nbsp;&nbsp; 1.99 per kg</label>
+                    </div>
+                </div>
+                <br />
+                <mat-divider></mat-divider>
+                <div class="card-align">
+                    <div class="pull-left">
+                        <label class="tableHeader">{{ 'End Date' | translate }}</label>
+                    </div>
+                    <div class="pull-right">
+                        <label class="content-label">12/12/2018</label>
+                    </div>
+                </div>
+                <br />
+                <mat-divider></mat-divider>
+                <div class="card-align">
                     <div>
                         <label class="tableHeader">{{ 'Quantity' | translate }}</label>
                         <div class="progress">
@@ -43,21 +63,25 @@
                     </div>
                 </div>
                 <div class="card-align">
-                    <label class="comp-label">{{ 'Quantity Available' | translate }}</label><br />
-                    <div class="row" style="margin-left: 0px">
-                        <div class="textbox-border">
-                            <button mat-icon-button>
-                                <i class="fa fa-minus" aria-hidden="true"></i>
-                            </button>
-                        </div>
-                        <input matInput type="number" id="myNumber" class="textbox-border">
-                        <div class="textbox-border">
-                            <button mat-icon-button>
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <span class="help-text">{{ 'Inc Or Dec' | translate }}</span>
+                    <label class="comp-label">{{ 'New Offer' | translate }}</label><br />
+                    <form class="example-form">
+                        <mat-form-field class="example-full-width">
+                            <span matPrefix><i class="fa fa-eur"></i> &nbsp;</span>
+                            <input matInput placeholder="{{ 'Enter Price' | translate }}">
+                        </mat-form-field>
+
+                    </form>
+                </div>
+                <div class="card-align">
+                    <label class="comp-label">{{ 'Discount' | translate }}</label><br />
+                    <mat-form-field>
+                        <mat-select matNativeControl required>
+                            <mat-option value="None">None</mat-option>
+                            <mat-option value="10% OFF">10% OFF</mat-option>
+                            <mat-option value="20% OFF">20% OFF</mat-option>
+                            <mat-option value="Custom">Custom</mat-option>
+                        </mat-select>
+                    </mat-form-field>
                 </div>
                 <div>
                     <div class="d-flex justify-content-center">

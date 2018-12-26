@@ -14,6 +14,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatNativeDateModule } from '@angular/material';
 import { MatCardModule } from '@angular/material/card';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   imports: [
@@ -31,7 +32,8 @@ import { MatCardModule } from '@angular/material/card';
     MatListModule,
     MatFormFieldModule,
     MatNativeDateModule,
-    MatCardModule
+    MatCardModule,
+    MatSelectModule
   ],
   exports: [
     MatInputModule,
@@ -47,7 +49,8 @@ import { MatCardModule } from '@angular/material/card';
     MatListModule,
     MatFormFieldModule,
     MatNativeDateModule,
-    MatCardModule
+    MatCardModule,
+    MatSelectModule
   ],
   declarations: []
 })

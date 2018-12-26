@@ -78,9 +78,9 @@
             <div class="row">
               <div class="col-sm-6" [ngbCollapse]="isCollapsed">
                 <div class="card mb-3">
-                  <div class="card-header bg-warning">
+                  <div class="card-header cardHeaderOne">
                     <img src="https://greenmylife-wpengine.netdna-ssl.com/wp-content/uploads/2014/02/Carrot.jpg" class="avatar">
-                    APPLE&nbsp;
+                    &nbsp;<label style="margin-top: 8px">APPLE</label>&nbsp;&nbsp;
                     <label class="noExpiryGray">{{ 'Noexpiry' | translate }}</label>&nbsp;&nbsp;
                     <img src="../../../assets/images/Components/ic_more_info_small_orange@2x.png" (click)="open(content)"
                       class="img-responsive">
@@ -110,7 +110,7 @@
                       </button>
 
                       <mat-menu #menu="matMenu">
-                        <button mat-menu-item>{{ 'Show History' | translate }}</button>
+                        <button mat-menu-item [routerLink]="['/offer-history']">{{ 'Show History' | translate }}</button>
                         <button mat-menu-item [routerLink]="['/edit-quantity']">{{ 'Edit Quantity' | translate }}</button>
                         <button mat-menu-item>{{ 'Terminate Early' | translate }}</button>
                       </mat-menu>
@@ -129,16 +129,16 @@
                       <label>Sold 64 kgs</label>&nbsp;&nbsp;<label>Available 36 kgs</label><br />
                       <label class="tableHeader"><strong>{{ 'Price' | translate }}</strong></label><br />
                       <label>3.99 per box</label><br />
-                      <h5 class="themeLabelColor">{{ 'Change Price' | translate }}</h5>
+                      <button mat-button class="priceBtn" [routerLink]="['/change-price']">{{ 'Change Price' |translate }}</button>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-sm-6" [ngbCollapse]="isCollapsed">
                 <div class="card mb-3">
-                  <div class="card-header bg-warning">
+                  <div class="card-header cardHeaderTwo">
                     <img src="https://greenmylife-wpengine.netdna-ssl.com/wp-content/uploads/2014/02/Carrot.jpg" class="avatar">
-                    TOMATO&nbsp;
+                    &nbsp;<label style="margin-top: 8px">TOMATO</label>&nbsp;&nbsp;
                     <label class="noExpiryGray">end in 3 days</label>&nbsp;&nbsp;
                     <div class="pull-right">
                       <!-- menu opens when trigger button is clicked -->
@@ -165,16 +165,16 @@
                       <label>Sold 64 kgs</label>&nbsp;&nbsp;<label>Available 36 kgs</label><br />
                       <label class="tableHeader"><strong>{{ 'Price' | translate }}</strong></label><br />
                       <label>3.99 per box</label><br />
-                      <h5 class="themeLabelColor">{{ 'Change Price' | translate }}</h5>
+                      <button mat-button class="priceBtn" [routerLink]="['/change-price']">{{ 'Change Price' |translate }}</button>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-sm-6" [ngbCollapse]="isCollapsed">
                 <div class="card mb-3">
-                  <div class="card-header bg-warning">
+                  <div class="card-header cardHeaderOne">
                     <img src="https://greenmylife-wpengine.netdna-ssl.com/wp-content/uploads/2014/02/Carrot.jpg" class="avatar">
-                    ORANGE&nbsp;
+                    &nbsp;<label style="margin-top: 8px">ORANGE</label>&nbsp;&nbsp;&nbsp;
                     <label class="noExpiryGray">end in 2 days</label>&nbsp;&nbsp;
                     <div class="pull-right">
                       <!-- menu opens when trigger button is clicked -->
@@ -201,7 +201,7 @@
                       <label>Sold 64 kgs</label>&nbsp;&nbsp;<label>Available 36 kgs</label><br />
                       <label class="tableHeader"><strong>{{ 'Price' | translate }}</strong></label><br />
                       <label>3.99 per box</label><br />
-                      <h5 class="themeLabelColor">{{ 'Change Price' | translate }}</h5>
+                      <button mat-button class="priceBtn" [routerLink]="['/change-price']">{{ 'Change Price' |translate }}</button>
                     </div>
                   </div>
                 </div>
