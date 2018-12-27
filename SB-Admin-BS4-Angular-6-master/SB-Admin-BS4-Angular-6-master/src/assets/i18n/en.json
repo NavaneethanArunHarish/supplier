@@ -90,5 +90,11 @@
     "Change-Price": "Change Price",
     "Current Price":"Current Price",
     "New Price":"New Price",
-    "Enter Price":"Enter the new price for the product"
+    "Enter Price":"Enter the new price for the product",
+    "Archive Details":"Find all the expired and terminated offers in archive. For more details on archive, click",
+    "Expired":"EXPIRED",
+    "Terminated":"TERMINATED",
+    "Sold":"Sold",
+    "Offer Ended":"Offer ended"
+
 }

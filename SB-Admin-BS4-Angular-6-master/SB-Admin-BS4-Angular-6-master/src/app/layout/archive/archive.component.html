@@ -1,0 +1,209 @@
+<div [@routerTransition]>
+    <div class="row headerCardBody">
+        <div class="col-xl-12 text-xs-center">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <div class="row headerleft">
+                        <h3 class="archive-label">{{ 'Archive' | translate }}</h3>
+                    </div>
+                    <div class="row headerleft">
+                        <label class="headerGray">{{ 'Archive Details' | translate }}&nbsp;<span class="themeLabelColor">{{
+                                'Here' | translate
+                                }}</span></label>
+                    </div>
+                    <div class="row headerCardBody">
+                        <div class="col-xl-12 text-xs-center">
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <div class="pull-right">
+                                        <img src="../../../assets/images/Components/ic_filters_active@2x.png" class="img-responsive"
+                                            (click)="filterEnable=!filterEnable">&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <img src="../../../assets/images/Components/ic_search_active@2x.png" class="img-responsive"
+                                            (click)="searchEnable=!searchEnable">
+                                    </div>
+                                    <br /><br />
+                                    <div *ngIf="searchEnable === true">
+                                        <form role="form">
+                                            <div class="form-group input-group">
+                                                <input type="text" class="form-control" placeholder="search by product name">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-secondary" type="button"><i class="fa fa-search"></i></button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div *ngIf="filterEnable === true">
+                                        <div class="row">
+                                            <div class="col-sm-12" [ngbCollapse]="isCollapsed">
+                                                <div class="card mb-3">
+                                                    <div class="card-body">
+                                                        <div>
+                                                            <div class="pull-left">
+                                                                <img src="../../../assets/images/Components/ic_filters_active.png"
+                                                                    class="img-responsive filter-img-align">
+                                                            </div>&nbsp;&nbsp;
+                                                            <label class="filter-align">{{ 'Filter' | translate }}</label>
+                                                            <div class="pull-right">
+                                                                <button mat-button><span>{{ 'Reset' | translate }}</span></button>
+                                                                <button mat-button><span>{{ 'Apply' | translate }}</span></button>
+                                                            </div><br />
+                                                            <div>
+                                                                <label><strong>{{ 'Discount' | translate }}</strong></label><br />
+                                                                <mat-radio-group>
+                                                                    <mat-radio-button value="1"><label class="tableHeader">{{
+                                                                            'With' | translate }}</label></mat-radio-button>&nbsp;&nbsp;
+                                                                    <mat-radio-button value="2"><label class="tableHeader">{{
+                                                                            'Without' | translate }}</label></mat-radio-button>
+                                                                </mat-radio-group>
+                                                            </div>
+                                                            <div>
+                                                                <label><strong>{{ 'Quantity' | translate }}</strong></label><br />
+                                                                <mat-radio-group>
+                                                                    <mat-radio-button value="1"><label class="tableHeader">&gt;
+                                                                            50% Sold</label></mat-radio-button>&nbsp;&nbsp;
+                                                                    <mat-radio-button value="2"><label class="tableHeader">&gt;
+                                                                            50% Available</label></mat-radio-button>
+                                                                </mat-radio-group>
+                                                            </div>
+                                                            <div>
+                                                                <label><strong>{{ 'Expiry' | translate }}</strong></label><br />
+                                                                <mat-radio-group>
+                                                                    <mat-radio-button value="1"><label class="tableHeader">&lt;
+                                                                            5 Days to expire</label></mat-radio-button>&nbsp;&nbsp;
+                                                                    <mat-radio-button value="2"><label class="tableHeader">&gt;
+                                                                            5 Days to expire</label></mat-radio-button>
+                                                                </mat-radio-group>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br /><br />
+                                    </div>
+                                    <mat-tab-group>
+                                        <mat-tab label="{{ 'Expired' | translate }}">
+                                            <div class="headerCard">
+                                                <img src="https://greenmylife-wpengine.netdna-ssl.com/wp-content/uploads/2014/02/Carrot.jpg"
+                                                    class="avatar">
+                                                &nbsp;<label class="product-label">CARROT</label>&nbsp;&nbsp;
+                                                <label class="offer-label">{{ 'Offered From' | translate }} 12/12/2018</label>
+                                                <img src="../../../assets/images/Components/ic_show_history_grey.png"
+                                                    class="img-responsive pull-right img-align">
+                                                <div class="table-responsive">
+                                                    <table class="table borderless">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="tableHeader">{{ 'Sold' | translate }}</th>
+                                                                <th class="tableHeader">{{ 'Price' | translate }}</th>
+                                                                <th class="tableHeader">{{ 'Offer Ended' | translate }}</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="tableBody">22/100</td>
+                                                                <td class="tableBody"><i class="fa fa-eur"></i>&nbsp;&nbsp;1.30
+                                                                    per kg</td>
+                                                                <td class="tableBody">12/12/2018</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <mat-divider></mat-divider>
+                                            </div>
+                                            <div class="headerCard">
+                                                <img src="https://greenmylife-wpengine.netdna-ssl.com/wp-content/uploads/2014/02/Carrot.jpg"
+                                                    class="avatar">
+                                                &nbsp;<label class="product-label">CARROT</label>&nbsp;&nbsp;
+                                                <label class="offer-label">{{ 'Offered From' | translate }} 12/12/2018</label>
+                                                <img src="../../../assets/images/Components/ic_show_history_grey.png"
+                                                    class="img-responsive pull-right img-align">
+                                                <div class="table-responsive">
+                                                    <table class="table borderless">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="tableHeader">{{ 'Sold' | translate }}</th>
+                                                                <th class="tableHeader">{{ 'Price' | translate }}</th>
+                                                                <th class="tableHeader">{{ 'Offer Ended' | translate }}</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="tableBody">22/100</td>
+                                                                <td class="tableBody"><i class="fa fa-eur"></i>&nbsp;&nbsp;1.30
+                                                                    per kg</td>
+                                                                <td class="tableBody">12/12/2018</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <mat-divider></mat-divider>
+                                            </div>
+                                            <div class="headerCard">
+                                                <img src="https://greenmylife-wpengine.netdna-ssl.com/wp-content/uploads/2014/02/Carrot.jpg"
+                                                    class="avatar">
+                                                &nbsp;<label class="product-label">CARROT</label>&nbsp;&nbsp;
+                                                <label class="offer-label">{{ 'Offered From' | translate }} 12/12/2018</label>
+                                                <img src="../../../assets/images/Components/ic_show_history_grey.png"
+                                                    class="img-responsive pull-right img-align">
+                                                <div class="table-responsive">
+                                                    <table class="table borderless">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="tableHeader">{{ 'Sold' | translate }}</th>
+                                                                <th class="tableHeader">{{ 'Price' | translate }}</th>
+                                                                <th class="tableHeader">{{ 'Offer Ended' | translate }}</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="tableBody">22/100</td>
+                                                                <td class="tableBody"><i class="fa fa-eur"></i>&nbsp;&nbsp;1.30
+                                                                    per kg</td>
+                                                                <td class="tableBody">12/12/2018</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <mat-divider></mat-divider>
+                                            </div>
+                                            <div class="headerCard">
+                                                <img src="https://greenmylife-wpengine.netdna-ssl.com/wp-content/uploads/2014/02/Carrot.jpg"
+                                                    class="avatar">
+                                                &nbsp;<label class="product-label">CARROT</label>&nbsp;&nbsp;
+                                                <label class="offer-label">{{ 'Offered From' | translate }} 12/12/2018</label>
+                                                <img src="../../../assets/images/Components/ic_show_history_grey.png"
+                                                    class="img-responsive pull-right img-align">
+                                                <div class="table-responsive">
+                                                    <table class="table borderless">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="tableHeader">{{ 'Sold' | translate }}</th>
+                                                                <th class="tableHeader">{{ 'Price' | translate }}</th>
+                                                                <th class="tableHeader">{{ 'Offer Ended' | translate }}</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="tableBody">22/100</td>
+                                                                <td class="tableBody"><i class="fa fa-eur"></i>&nbsp;&nbsp;1.30
+                                                                    per kg</td>
+                                                                <td class="tableBody">12/12/2018</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <mat-divider></mat-divider>
+                                            </div>
+                                        </mat-tab>
+                                        <mat-tab label="{{ 'Terminated' | translate }}"> Coming Soon</mat-tab>
+                                    </mat-tab-group>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

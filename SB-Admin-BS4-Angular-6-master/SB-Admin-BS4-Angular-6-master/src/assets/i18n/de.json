@@ -89,5 +89,10 @@
     "Change-Price": "Preis ändern",
     "Current Price":"Derzeitiger Preis",
     "New Price":"Neuer Preis",
-    "Enter Price":"Geben Sie den neuen Preis für das Produkt ein"
+    "Enter Price":"Geben Sie den neuen Preis für das Produkt ein",
+    "Archive Details":"Finden Sie alle abgelaufenen und beendeten Angebote im Archiv. Für weitere Details zum Archiv klicken Sie auf",
+    "Expired":"ABGELAUFEN",
+    "Terminated":"BEENDET",
+    "Sold":"Verkauft",
+    "Offer Ended":"Das Angebot endete am"
 }

@@ -25,6 +25,7 @@ const routes: Routes = [
             { path: 'edit-offer', loadChildren: './edit-offer/edit-offer.module#EditOfferModule' },
             { path: 'edit-quantity', loadChildren: './edit-quantity/edit-quantity.module#EditQuantityModule' },
             { path: 'add-end-date', loadChildren: './add-end-date/add-end-date.component.module#AddEndDateModule' },
+            { path: 'archive', loadChildren: './archive/archive.component.module#ArchiveModule' },
             { path: 'change-price', loadChildren: './change-price/change.price.module#ChangePriceModule' }
         ]
     }
