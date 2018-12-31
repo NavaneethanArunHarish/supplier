@@ -14,11 +14,19 @@
 .tableHeader {
     color: #838A95 !important;
     font-size: 12px;
+    font-family: Muli, Light;
+}
+
+.table-Header {
+    color: #BABEC5;
+    font-size: 12px;
+    font-family: Muli, Bold;
 }
 
 .help-text {
     color:#2D3A4C;
     font-size: 12px;
+    font-family: Muli, SemiBold;
 }
 
 .themeLabelColor {
@@ -36,12 +44,16 @@
     color:#fff;
     height:50px;
     width:200px;
+    font-size: 14px;
+    font-family: Muli, SemiBold;
 }
 
 .cancelBtn {
     height:50px;
     width:200px;
     color:#C9CBD0;
+    font-size: 14px;
+    font-family: Muli, SemiBold;
 }
 
 .headerleft {
@@ -59,23 +71,27 @@
 }
 
 .header-label {
-    color: #2D3A4C !important;
+    color: #2D3A4C;
     font-size: 20px;
+    font-family: Muli, SemiBold;
 }
 
 .content-label {
     color: #283245 !important;
     font-size: 14px;
+    font-family: Muli, Bold;
 }
 
 .quantity-label {
     color:#424D5D;
     font-size: 14px;
+    font-family: Muli, SemiBold;
 }
 
 .comp-label {
     color: #2D3A4C !important;
     font-size: 14px;
+    font-family: Muli, Bold;
 }
 
 

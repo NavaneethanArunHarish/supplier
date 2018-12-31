@@ -12,8 +12,9 @@
 }
 
 .tableHeader {
-    color: #868e96 !important;
-    font-size: 13px;
+    color: #838A95;
+    font-size: 12px;
+    font-family: Muli, Light;
 }
 
 .themeLabelColor {
@@ -25,11 +26,65 @@
     border-color: #FF7800;
     margin: 25px;
     color:#fff;
+    font-size: 14px;
+    height:50px;
+    width:200px;
+    font-family: Muli, SemiBold;
+}
+
+.cancelBtn {
+    height:50px;
+    width:200px;
+    color:#C9CBD0;
+    font-size: 14px;
+    font-family: Muli, SemiBold;
 }
 
 .headerleft {
     margin-left: 0px;
     margin-top: 25px;
+}
+
+.end-label {
+    color:#2D3A4C;
+    font-size: 20px;
+    font-family: Muli, SemiBold;
+}
+
+.value-label {
+    color:#283245;
+    font-size: 14px;
+    font-family: Muli, Bold;
+}
+
+.quality-header {
+    color:#BABEC5;
+    font-size: 12px;
+    font-family: Muli, Bold;
+}
+
+.title-label {
+    color:#424D5D;
+    font-size: 14px;
+    font-family: Muli, Regular;
+}
+
+.val-label {
+    color:#424D5D;
+    font-size: 14px;
+    font-family: Muli, Bold;
+}
+
+.offer-end {
+    color:#43425D;
+    font-size: 14px;
+    font-family: Muli, Bold;
+}
+
+.help {
+    color:#2D3A4C;
+    font-size: 12px;
+    font-family: Muli, Light;
 }
 
 

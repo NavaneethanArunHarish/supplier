@@ -1,23 +1,24 @@
-<div [@routerTransition]>
-  <div class="row headerleft">
-    <h3>{{ 'Offer' | translate }}</h3>
-  </div>
-</div>
-<div>
-  <label class="headerGray">{{ 'Offer Details' | translate }}&nbsp;<span class="themeLabelColor">{{ 'Here' | translate
-      }}</span></label>
-</div>
-<div class="d-flex justify-content-center">
-  <button type="submit" class="btn themeBtnColor" [routerLink]="['/create-offer']">{{ 'Create Offer' | translate }}</button>
-</div>
-
 <div class="row headerCardBody">
   <div class="col-xl-12 text-xs-center">
     <div class="card mb-3">
       <div class="card-body">
+        <div [@routerTransition]>
+          <div class="row headerleft">
+            <h3 class="offer-label">{{ 'Offer' | translate }}</h3>
+          </div>
+        </div>
+        <div>
+          <label class="headerGray">{{ 'Offer Details' | translate }}&nbsp;<span class="here-label">{{ 'Here' |
+              translate
+              }}</span></label>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn themeBtnColor" [routerLink]="['/create-offer']">{{ 'Create Offer' |
+            translate }}</button>
+        </div>
         <div class="pull-right">
-          <img src="../../../assets/images/Components/ic_filters_active@2x.png" class="img-responsive" (click)="filterEnable=!filterEnable">&nbsp;&nbsp;&nbsp;&nbsp;
-          <img src="../../../assets/images/Components/ic_search_active@2x.png" class="img-responsive" (click)="searchEnable=!searchEnable">
+          <img src="../../../assets/images/Components/ic_filters_active.png" class="img-responsive" (click)="filterEnable=!filterEnable">&nbsp;&nbsp;&nbsp;&nbsp;
+          <img src="../../../assets/images/Components/ic_search_active.png" class="img-responsive" (click)="searchEnable=!searchEnable">
         </div>
         <br /><br />
         <div *ngIf="searchEnable === true">
@@ -41,28 +42,28 @@
                     </div>&nbsp;&nbsp;
                     <label class="filter-align">{{ 'Filter' | translate }}</label>
                     <div class="pull-right">
-                      <button mat-button><span>{{ 'Reset' | translate }}</span></button>
-                      <button mat-button><span>{{ 'Apply' | translate }}</span></button>
+                      <button mat-button><span class="reset-label">{{ 'Reset' | translate }}</span></button>
+                      <button mat-button><span class="apply-label">{{ 'Apply' | translate }}</span></button>
                     </div><br />
                     <div>
-                      <label><strong>{{ 'Discount' | translate }}</strong></label><br />
+                      <label class="filter-header">{{ 'Discount' | translate }}</label><br />
                       <mat-radio-group>
-                        <mat-radio-button value="1"><label class="tableHeader">{{ 'With' | translate }}</label></mat-radio-button>&nbsp;&nbsp;
-                        <mat-radio-button value="2"><label class="tableHeader">{{ 'Without' | translate }}</label></mat-radio-button>
+                        <mat-radio-button value="1"><label class="filter-label">{{ 'With' | translate }}</label></mat-radio-button>&nbsp;&nbsp;
+                        <mat-radio-button value="2"><label class="filter-label">{{ 'Without' | translate }}</label></mat-radio-button>
                       </mat-radio-group>
                     </div>
                     <div>
-                      <label><strong>{{ 'Quantity' | translate }}</strong></label><br />
+                      <label class="filter-header">{{ 'Quantity' | translate }}</label><br />
                       <mat-radio-group>
-                        <mat-radio-button value="1"><label class="tableHeader">&gt; 50% Sold</label></mat-radio-button>&nbsp;&nbsp;
-                        <mat-radio-button value="2"><label class="tableHeader">&gt; 50% Available</label></mat-radio-button>
+                        <mat-radio-button value="1"><label class="filter-label">&gt; 50% Sold</label></mat-radio-button>&nbsp;&nbsp;
+                        <mat-radio-button value="2"><label class="filter-label">&gt; 50% Available</label></mat-radio-button>
                       </mat-radio-group>
                     </div>
                     <div>
-                      <label><strong>{{ 'Expiry' | translate }}</strong></label><br />
+                      <label class="filter-header">{{ 'Expiry' | translate }}</label><br />
                       <mat-radio-group>
-                        <mat-radio-button value="1"><label class="tableHeader">&lt; 5 Days to expire</label></mat-radio-button>&nbsp;&nbsp;
-                        <mat-radio-button value="2"><label class="tableHeader">&gt; 5 Days to expire</label></mat-radio-button>
+                        <mat-radio-button value="1"><label class="filter-label">&lt; 5 Days to expire</label></mat-radio-button>&nbsp;&nbsp;
+                        <mat-radio-button value="2"><label class="filter-label">&gt; 5 Days to expire</label></mat-radio-button>
                       </mat-radio-group>
                     </div>
                   </div>
@@ -80,20 +81,20 @@
                 <div class="card mb-3">
                   <div class="card-header cardHeaderOne">
                     <img src="https://greenmylife-wpengine.netdna-ssl.com/wp-content/uploads/2014/02/Carrot.jpg" class="avatar">
-                    &nbsp;<label style="margin-top: 8px">APPLE</label>&nbsp;&nbsp;
-                    <label class="noExpiryGray">{{ 'Noexpiry' | translate }}</label>&nbsp;&nbsp;
-                    <img src="../../../assets/images/Components/ic_more_info_small_orange@2x.png" (click)="open(content)"
+                    &nbsp;<label class="product-label">APPLE</label>&nbsp;&nbsp;
+                    <label class="expiry-label">{{ 'Noexpiry' | translate }}</label>&nbsp;
+                    <img src="../../../assets/images/Components/ic_more_info_small_orange.png" (click)="open(content)"
                       class="img-responsive">
                     <ng-template #content let-c="close" let-d="dismiss">
                       <div class="modal-header">
-                        <h5 class="modal-title tableHeader"><img src="../../../assets/images/Components/ic_more_info_black.png"
+                        <h5 class="modal-title no-expiry-header"><img src="../../../assets/images/Components/ic_more_info_black.png"
                             class="img-responsive">&nbsp;&nbsp;{{ 'No Expiry' | translate }}</h5>
                         <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
                       <div class="modal-body">
-                        <p>{{ 'Terminate Date' | translate }}</p><br />
+                        <p class="date-label">{{ 'Terminate Date' | translate }}</p><br />
                         <div class="align-center">
                           <a href="javascript:void(0)" aria-label="Close" (click)="d('Cross click')" [routerLink]="['/add-end-date']">{{
                             'Add End Date' | translate }}</a>
@@ -110,9 +111,9 @@
                       </button>
 
                       <mat-menu #menu="matMenu">
-                        <button mat-menu-item [routerLink]="['/offer-history']">{{ 'Show History' | translate }}</button>
-                        <button mat-menu-item [routerLink]="['/edit-quantity']">{{ 'Edit Quantity' | translate }}</button>
-                        <button mat-menu-item>{{ 'Terminate Early' | translate }}</button>
+                        <button mat-menu-item [routerLink]="['/offer-history']"><label class="menu-label">{{ 'Show History' | translate }}</label></button>
+                        <button mat-menu-item [routerLink]="['/edit-quantity']"><label class="menu-label">{{ 'Edit Quantity' | translate }}</label></button>
+                        <button mat-menu-item><label class="menu-label">{{ 'Terminate Early' | translate }}</label></button>
                       </mat-menu>
 
                     </div>
@@ -126,10 +127,11 @@
                         </div>
                       </div>
                       <br />
-                      <label>Sold 64 kgs</label>&nbsp;&nbsp;<label>Available 36 kgs</label><br />
+                      <label class="title-label">Sold</label>&nbsp;<label class="value-label"> 64 kgs</label>&nbsp;&nbsp;<label class="title-label">Available</label>&nbsp;<label class="value-label"> 36 kgs</label><br />
                       <label class="tableHeader"><strong>{{ 'Price' | translate }}</strong></label><br />
-                      <label><i class="fa fa-eur"></i>&nbsp;&nbsp;3.99 per box</label><br />
-                      <button mat-button class="priceBtn" [routerLink]="['/change-price']">{{ 'Change Price' |translate }}</button>
+                      <label class="price-label"><i class="fa fa-eur"></i>&nbsp;&nbsp;3.99 per box</label><br />
+                      <button mat-button class="priceBtn" [routerLink]="['/change-price']">{{ 'Change Price' |translate
+                        }}</button>
                     </div>
                   </div>
                 </div>
@@ -138,8 +140,8 @@
                 <div class="card mb-3">
                   <div class="card-header cardHeaderTwo">
                     <img src="https://greenmylife-wpengine.netdna-ssl.com/wp-content/uploads/2014/02/Carrot.jpg" class="avatar">
-                    &nbsp;<label style="margin-top: 8px">TOMATO</label>&nbsp;&nbsp;
-                    <label class="noExpiryGray">end in 3 days</label>&nbsp;&nbsp;
+                    &nbsp;<label class="product-label">TOMATO</label>&nbsp;&nbsp;
+                    <label class="expiry-label">end in 3 days</label>&nbsp;&nbsp;
                     <div class="pull-right">
                       <!-- menu opens when trigger button is clicked -->
                       <button mat-icon-button [matMenuTriggerFor]="menu">
@@ -155,17 +157,18 @@
                   </div>
                   <div class="card-body">
                     <div>
-                      <label class="tableHeader"><strong>{{ 'Quantity' | translate }}</strong></label>
+                      <label class="tableHeader">{{ 'Quantity' | translate }}</label>
                       <div class="progress">
                         <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20"
                           aria-valuemin="0" aria-valuemax="100" style="width:20%">
                         </div>
                       </div>
                       <br />
-                      <label>Sold 64 kgs</label>&nbsp;&nbsp;<label>Available 36 kgs</label><br />
-                      <label class="tableHeader"><strong>{{ 'Price' | translate }}</strong></label><br />
-                      <label><i class="fa fa-eur"></i>&nbsp;&nbsp;3.99 per box</label><br />
-                      <button mat-button class="priceBtn" [routerLink]="['/change-price']">{{ 'Change Price' |translate }}</button>
+                      <label class="title-label">Sold</label>&nbsp;<label class="value-label"> 64 kgs</label>&nbsp;&nbsp;<label class="title-label">Available</label>&nbsp;<label class="value-label"> 36 kgs</label><br />
+                      <label class="tableHeader">{{ 'Price' | translate }}</label><br />
+                      <label class="price-label"><i class="fa fa-eur"></i>&nbsp;&nbsp;3.99 per box</label><br />
+                      <button mat-button class="priceBtn" [routerLink]="['/change-price']">{{ 'Change Price' |translate
+                        }}</button>
                     </div>
                   </div>
                 </div>
@@ -174,8 +177,8 @@
                 <div class="card mb-3">
                   <div class="card-header cardHeaderOne">
                     <img src="https://greenmylife-wpengine.netdna-ssl.com/wp-content/uploads/2014/02/Carrot.jpg" class="avatar">
-                    &nbsp;<label style="margin-top: 8px">ORANGE</label>&nbsp;&nbsp;&nbsp;
-                    <label class="noExpiryGray">end in 2 days</label>&nbsp;&nbsp;
+                    &nbsp;<label class="product-label">ORANGE</label>&nbsp;&nbsp;&nbsp;
+                    <label class="expiry-label">end in 2 days</label>&nbsp;&nbsp;
                     <div class="pull-right">
                       <!-- menu opens when trigger button is clicked -->
                       <button mat-icon-button [matMenuTriggerFor]="menu">
@@ -198,10 +201,11 @@
                         </div>
                       </div>
                       <br />
-                      <label>Sold 64 kgs</label>&nbsp;&nbsp;<label>Available 36 kgs</label><br />
+                      <label class="title-label">Sold</label>&nbsp;<label class="value-label"> 64 kgs</label>&nbsp;&nbsp;<label class="title-label">Available</label>&nbsp;<label class="value-label"> 36 kgs</label><br />
                       <label class="tableHeader"><strong>{{ 'Price' | translate }}</strong></label><br />
-                      <label><i class="fa fa-eur"></i>&nbsp;&nbsp;3.99 per box</label><br />
-                      <button mat-button class="priceBtn" [routerLink]="['/change-price']">{{ 'Change Price' |translate }}</button>
+                      <label class="price-label"><i class="fa fa-eur"></i>&nbsp;&nbsp;3.99 per box</label><br />
+                      <button mat-button class="priceBtn" [routerLink]="['/change-price']">{{ 'Change Price' |translate
+                        }}</button>
                     </div>
                   </div>
                 </div>

@@ -1,8 +1,9 @@
 <div class="login-page" [@routerTransition]>
     <div class="row justify-content-md-center">
         <div class="col-md-4">
-            <h1 class="headerLabel"><strong>GASTROZON</strong></h1>
-            <h3><strong>LOGIN</strong></h3>
+            <!-- <h1 class="headerLabel"><strong>GASTROZON</strong></h1> -->
+            <img src="../../assets/images/Components/ic_gastrozon_logo_large.png" class="img-responsive"><br />
+            <h3 class="login-label">LOGIN</h3>
             <label class="loginLabel">Please login into your supplier account</label>
             <form role="form">
                 <div class="form-content">
@@ -23,15 +24,16 @@
                     </div>
                     <div class="form-group">
                         <div class="checkbox pull-left">
-                            <label>
+                                <mat-checkbox><h3 class="remem-label"> Remember me</h3></mat-checkbox>
+                            <!-- <label class="remem-label">
                                 <input type="checkbox" value=""> Remember me
-                            </label>
+                            </label> -->
                         </div>
-                        <div class="pull-right"><a href="#"> Forget Password?</a></div>
+                        <div class="pull-right forget-label"> Forget Password?</div>
                     </div>
                 </div>
 
-                <a class="btn rounded-btn" (click)="onLoggedin()"> Log in </a>
+                <a class="btn rounded-btn" (click)="onLoggedin()"> LOGIN </a>
                 &nbsp;
                 <!-- <a class="btn rounded-btn" [routerLink]="['/signup']">Register</a> -->
             </form>

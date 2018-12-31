@@ -1,10 +1,12 @@
 .headerGray {
-    color: #868e96 !important;
+    color:#9FA4AD;
+    font-size: 14px;
+    font-family: Muli, Bold
 }
 
 .headerleft {
     margin-left: 0px;
-    margin-top: 25px;
+    margin-top: 0px;
 }
 
 .offerLabel {
@@ -16,6 +18,8 @@
     border-color: #FF7800;
     margin: 25px;
     color:#fff;
+    font-size: 14px;
+    font-family: Muli, Semi Bold
 }
 
 .themeLabelColor {
@@ -27,12 +31,13 @@
 }
 
 .headerCardBody {
-    margin-top: 60px;
+    margin-top: 0px;
 }
 
 .tableHeader {
-    color: #868e96 !important;
-    font-size: 13px;
+    color: #BABEC5;
+    font-size: 12px;
+    font-family: Muli, Bold
 }
 
 .borderless td, .borderless th {
@@ -44,10 +49,6 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-}
-
-.noExpiryGray {
-    color: #4B4A4A;
 }
 
 .progress-bar-success {
@@ -77,10 +78,15 @@
 
 .align-center {
     text-align: center;
+    font-size: 12px;
+    font-family: Muli, SemiBold;
 }
 
 .filter-align {
-    margin-top:6px
+    margin-top:6px;
+    color:#2D3A4C;
+    font-size: 14px;
+    font-family: Muli, Regular;
 }
 .filter-img-align {
     margin-top:10px
@@ -88,6 +94,8 @@
 
 .priceBtn {
     color:#FF7800;
+    font-size: 14px;
+    font-family: Muli, Bold;
 }
 
 .cardHeaderOne {
@@ -97,3 +105,90 @@
 .cardHeaderTwo {
     background-color:#FAB4B4;
 }
+
+.offer-label {
+    color:#2D3A4C;
+    font-size: 20px;
+    font-family: Muli, Semi Bold
+}
+
+.here-label {
+    color:#FF7800;
+    font-size: 14px;
+    font-family: Muli, Bold
+}
+
+.product-label {
+    color:#283245;
+    font-size: 16px;
+    font-family: Muli, Bold;
+    margin-top:8px;
+}
+
+.expiry-label {
+    color:#57616F;
+    font-size: 12px;
+    font-family: Muli, Regular;
+}
+
+.title-label {
+    color:#424D5D;
+    font-size: 14px;
+    font-family: Muli, Regular;
+}
+
+.value-label {
+    color:#424D5D;
+    font-size: 14px;
+    font-family: Muli, Bold;
+}
+
+.price-label {
+    color:#424D5D;
+    font-size: 14px;
+    font-family: Muli, Semi Bold;
+}
+
+.menu-label{
+    color:#283045;
+    font-size: 12px;
+    font-family: Muli, Regular;
+}
+
+.reset-label{
+    color:#C9CBD0;
+    font-size: 14px;
+    font-family: Muli, Bold;
+}
+
+.apply-label{
+    color:#FF7800;
+    font-size: 14px;
+    font-family: Muli, Bold;
+}
+
+.filter-label{
+    color:#9FA4AD;
+    font-size: 12px;
+    font-family: Muli, Regular;
+}
+
+.filter-header{
+    color:#2D3A4C;
+    font-size: 12px;
+    font-family: Muli, Bold;
+}
+
+.no-expiry-header{
+    color:#9FA4AD;
+    font-size: 14px;
+    font-family: Muli, Regular;
+}
+
+.date-label{
+    color:#535A69;
+    font-size: 14px;
+    font-family: Muli, Regular;
+}
+
+

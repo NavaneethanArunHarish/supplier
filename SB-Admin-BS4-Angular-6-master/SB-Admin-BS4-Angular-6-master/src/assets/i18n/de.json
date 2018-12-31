@@ -24,7 +24,7 @@
     "Mail": "Post",
     "View All": "Alle Anzeigen",
     "Offer": "Angebot",
-    "Offer Details": "Hier finden Sie alle vorhandenen und geplanten Angebote der Produkte, die Sie besitzen. Für weitere Informationen zu Angeboten klicken Sie auf",
+    "Offer Details": "Finden Sie alle Angebote der Produkte, die Sie besitzen. Für weitere Informationen zu Angeboten klicken Sie auf",
     "Create Offer": "NEUES ANGEBOT ERSTELLEN",
     "Update Offer": "UPDATE-ANGEBOT",
     "Here": "hier.",
@@ -94,5 +94,10 @@
     "Expired":"ABGELAUFEN",
     "Terminated":"BEENDET",
     "Sold":"Verkauft",
-    "Offer Ended":"Das Angebot endete am"
+    "Offer Ended":"Das Angebot endete am",
+    "Login":"ANMELDUNG",
+    "Remember Me":"Erinnere dich an mich",
+    "Forget Pass":"Passwort vergessen",
+    "Login Supplier":"Bitte loggen Sie sich in Ihr Lieferantenkonto ein",
+    "Log In":"Anmeldung"
 }

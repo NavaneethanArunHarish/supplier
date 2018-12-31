@@ -6,7 +6,7 @@
                     <div class="row headerleft">
                         <h3 class="archive-label">{{ 'Archive' | translate }}</h3>
                     </div>
-                    <div class="row headerleft">
+                    <div class="row" style="margin-left: 0px;">
                         <label class="headerGray">{{ 'Archive Details' | translate }}&nbsp;<span class="themeLabelColor">{{
                                 'Here' | translate
                                 }}</span></label>
@@ -16,9 +16,9 @@
                             <div class="card mb-3">
                                 <div class="card-body">
                                     <div class="pull-right">
-                                        <img src="../../../assets/images/Components/ic_filters_active@2x.png" class="img-responsive"
+                                        <img src="../../../assets/images/Components/ic_filters_active.png" class="img-responsive"
                                             (click)="filterEnable=!filterEnable">&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <img src="../../../assets/images/Components/ic_search_active@2x.png" class="img-responsive"
+                                        <img src="../../../assets/images/Components/ic_search_active.png" class="img-responsive"
                                             (click)="searchEnable=!searchEnable">
                                     </div>
                                     <br /><br />
@@ -44,33 +44,37 @@
                                                             </div>&nbsp;&nbsp;
                                                             <label class="filter-align">{{ 'Filter' | translate }}</label>
                                                             <div class="pull-right">
-                                                                <button mat-button><span>{{ 'Reset' | translate }}</span></button>
-                                                                <button mat-button><span>{{ 'Apply' | translate }}</span></button>
+                                                                <button mat-button><span class="reset-label">{{ 'Reset'
+                                                                        | translate }}</span></button>
+                                                                <button mat-button><span class="apply-label">{{ 'Apply'
+                                                                        | translate }}</span></button>
                                                             </div><br />
                                                             <div>
-                                                                <label><strong>{{ 'Discount' | translate }}</strong></label><br />
+                                                                <label class="filter-header">{{ 'Discount' | translate
+                                                                    }}</label><br />
                                                                 <mat-radio-group>
-                                                                    <mat-radio-button value="1"><label class="tableHeader">{{
+                                                                    <mat-radio-button value="1"><label class="filter-label">{{
                                                                             'With' | translate }}</label></mat-radio-button>&nbsp;&nbsp;
-                                                                    <mat-radio-button value="2"><label class="tableHeader">{{
+                                                                    <mat-radio-button value="2"><label class="filter-label">{{
                                                                             'Without' | translate }}</label></mat-radio-button>
                                                                 </mat-radio-group>
                                                             </div>
                                                             <div>
-                                                                <label><strong>{{ 'Quantity' | translate }}</strong></label><br />
+                                                                <label class="filter-header">{{ 'Quantity' | translate
+                                                                    }}</label><br />
                                                                 <mat-radio-group>
-                                                                    <mat-radio-button value="1"><label class="tableHeader">&gt;
+                                                                    <mat-radio-button value="1"><label class="filter-label">&gt;
                                                                             50% Sold</label></mat-radio-button>&nbsp;&nbsp;
-                                                                    <mat-radio-button value="2"><label class="tableHeader">&gt;
+                                                                    <mat-radio-button value="2"><label class="filter-label">&gt;
                                                                             50% Available</label></mat-radio-button>
                                                                 </mat-radio-group>
                                                             </div>
                                                             <div>
-                                                                <label><strong>{{ 'Expiry' | translate }}</strong></label><br />
+                                                                <label class="filter-header">{{ 'Expiry' | translate }}</label><br />
                                                                 <mat-radio-group>
-                                                                    <mat-radio-button value="1"><label class="tableHeader">&lt;
+                                                                    <mat-radio-button value="1"><label class="filter-label">&lt;
                                                                             5 Days to expire</label></mat-radio-button>&nbsp;&nbsp;
-                                                                    <mat-radio-button value="2"><label class="tableHeader">&gt;
+                                                                    <mat-radio-button value="2"><label class="filter-label">&gt;
                                                                             5 Days to expire</label></mat-radio-button>
                                                                 </mat-radio-group>
                                                             </div>

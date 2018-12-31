@@ -15,6 +15,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatNativeDateModule } from '@angular/material';
 import { MatCardModule } from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   imports: [
@@ -33,7 +34,8 @@ import { MatSelectModule } from '@angular/material/select';
     MatFormFieldModule,
     MatNativeDateModule,
     MatCardModule,
-    MatSelectModule
+    MatSelectModule,
+    MatCheckboxModule
   ],
   exports: [
     MatInputModule,
@@ -50,7 +52,8 @@ import { MatSelectModule } from '@angular/material/select';
     MatFormFieldModule,
     MatNativeDateModule,
     MatCardModule,
-    MatSelectModule
+    MatSelectModule,
+    MatCheckboxModule
   ],
   declarations: []
 })

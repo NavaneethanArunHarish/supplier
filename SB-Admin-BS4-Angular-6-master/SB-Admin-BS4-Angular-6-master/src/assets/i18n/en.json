@@ -24,7 +24,7 @@
     "Mail": "Mail",
     "View All": "View All",
     "Offer": "Offers",
-    "Offer Details": "Here, you can find all the existing and scheduled offers of the products you own. For more details on offers, click",
+    "Offer Details": "Find all the offers of the products you own. For more details on offers, click",
     "Create Offer": "CREATE NEW OFFER",
     "Update Offer": "UPDATE OFFER",
     "Here": "here.",
@@ -95,6 +95,11 @@
     "Expired":"EXPIRED",
     "Terminated":"TERMINATED",
     "Sold":"Sold",
-    "Offer Ended":"Offer ended"
+    "Offer Ended":"Offer ended",
+    "Login":"LOGIN",
+    "Remember Me":"Remember me",
+    "Forget Pass":"Forget Password",
+    "Login Supplier":"Please login into your supplier account",
+    "Log In":"Log in"
 
 }
