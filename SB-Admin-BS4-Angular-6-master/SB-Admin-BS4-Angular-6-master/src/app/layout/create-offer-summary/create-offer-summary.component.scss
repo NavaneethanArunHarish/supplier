@@ -3,13 +3,14 @@
 }
 
 .headerleft {
-    margin-left: 0px;
+    margin-left: 15px;
     margin-top: 25px;
 }
 
 .offer-label {
     color:#2D3A4C;
     font-size: 20px;
+    font-family: Muli, SemiBold;
 }
 
 .offerLabel {
@@ -19,13 +20,7 @@
 .help-label {
     color:#838A95;
     font-size: 14px;
-}
-
-.themeBtnColor {
-    background-color:#FF7800;
-    border-color:#FF7800;
-    margin: 5px;
-    color:#fff;
+    font-family: Muli, Regular;
 }
 
 .themeLabelColor {
@@ -43,6 +38,7 @@
 .tableHeader {
     color:#BABEC5;
     font-size: 12px;
+    font-family: Muli, Bold;
 }
 
 .tableHeaderColor {
@@ -54,6 +50,7 @@
 .tableBody {
     color: #424D5D;
     font-size: 14px;
+    font-family: Muli, SemiBold;
 }
 
 .tableBodyColor {
@@ -84,6 +81,36 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
+}
+
+.themeBtnColor {
+    background-color: #FF7800;
+    border-color: #FF7800;
+    margin: 10px;
+    color:#fff;
+    height:50px;
+    width:200px;
+    font-size: 14px;
+    font-family: Muli, SemiBold;
+}
+
+.cancelBtn {
+    height:50px;
+    width:200px;
+    color:#C9CBD0;
+    font-size: 14px;
+    font-family: Muli, SemiBold;
+}
+
+.backBtn {
+    height:50px;
+    width:200px;
+    background-color: #424D5D;
+    border-color: #424D5D;
+    margin: 10px;
+    color:#fff;
+    font-size: 14px;
+    font-family: Muli, SemiBold;
 }
 
 .product-style {

@@ -11,11 +11,39 @@
     color:#FF7800;
 }
 
+.selected {
+    background-color: rgb(255, 240, 225);
+    border-color: 2px solid #FF7800;
+}
+
 .themeBtnColor {
-    background-color:#FF7800;
-    border-color:#FF7800;
-    margin: 5px;
+    background-color: #FF7800;
+    border-color: #FF7800;
+    margin: 10px;
     color:#fff;
+    height:50px;
+    width:200px;
+    font-size: 14px;
+    font-family: Muli, SemiBold;
+}
+
+.cancelBtn {
+    height:50px;
+    width:200px;
+    color:#C9CBD0;
+    font-size: 14px;
+    font-family: Muli, SemiBold;
+}
+
+.backBtn {
+    height:50px;
+    width:200px;
+    background-color: #424D5D;
+    border-color: #424D5D;
+    margin: 10px;
+    color:#fff;
+    font-size: 14px;
+    font-family: Muli, SemiBold;
 }
 
 .themeLabelColor {
@@ -33,6 +61,7 @@
 .tableHeader {
     color:#BABEC5;
     font-size: 12px;
+    font-family: Muli, Bold;
 }
 
 .tableHeaderColor {
@@ -44,6 +73,13 @@
 .tableBody {
     color: #424D5D;
     font-size: 14px;
+    font-family: Muli, SemiBold;
+}
+
+.table-Body {
+    color: #43425D;
+    font-size: 14px;
+    font-family: Muli, Bold;
 }
 
 .tableBodyColor {
@@ -56,17 +92,20 @@
     text-align: center;
     color:#2D3A4C;
     font-size: 14px;
+    font-family: Muli, Bold;
 }
 
 .help-align {
     color:#2D3A4C;
     font-size: 12px;
+    font-family: Muli, Light;
 }
 
 .catalog-align {
     text-align: center;
     color:#BABEC5;
     font-size: 12px;
+    font-family: Muli, Light;
 }
 
 .avatar {
@@ -87,7 +126,7 @@
 }
 
 .slider-div {
-    background-color:#F1F5F7;
+    background-color:rgb(255, 240, 225);
 }
 
 .inlineBlock {

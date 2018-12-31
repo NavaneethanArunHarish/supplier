@@ -10,19 +10,35 @@
                                     <table class="table borderless slider-div">
                                         <tbody>
                                             <tr>
-                                                <th class="tableHeader">{{ 'Product' | translate }} &nbsp;&nbsp;<img
-                                                        src="../../../assets/images/Components/ic_tick_dark.png" class="img-responsive"></th>
+                                                <th class="tableHeader selected">{{ 'Product' | translate }}
+                                                    &nbsp;&nbsp;<img src="../../../assets/images/Components/ic_tick_dark.png"
+                                                        class="img-responsive"></th>
                                                 <th class="tableHeader">{{ 'Price' | translate }}</th>
                                                 <th class="tableHeader">{{ 'Quantity' | translate }}</th>
                                             </tr>
                                             <tr>
-                                                <th class="tableBody">Chicken Eggs</th>
+                                                <th class="tableBody selected">Chicken Eggs</th>
                                                 <th class="tableBody">TBD</th>
                                                 <th class="tableBody">TBD</th>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
+                                <!-- <div class="row slider-div">
+                                    <div class="pull-left">
+                                        <label class="tableHeader">{{ 'Product' | translate }}</label>&nbsp;&nbsp;<img
+                                            src="../../../assets/images/Components/ic_tick_dark.png" class="img-responsive"><br />
+                                        <label class="tableBody">Chicken Eggs</label>
+                                    </div>
+                                    <div style="text-align: center">
+                                        <label class="tableHeader">{{ 'Price' | translate }}</label><br />
+                                        <label class="tableBody">TBD</label>
+                                    </div>
+                                    <div class="pull-right">
+                                        <label class="tableHeader">{{ 'Quantity' | translate }}</label><br />
+                                        <label class="tableBody">TBD</label>
+                                    </div>
+                                </div> -->
                             </div>
                             <!-- <div class="inlineBlock" style="text-align:center">
                                 <div class="row">
@@ -54,32 +70,55 @@
                                     <div class="col-lg-6">
                                         <form role="form">
                                             <h3 class="label-style">{{ 'Price' | translate }}</h3>
-                                            <div class="form-group input-group">
+                                            <!-- <div class="form-group input-group">
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text" id="basic-addon1"><i class="fa fa-eur"></i></span>
                                                 </div>
                                                 <input type="text" class="form-control">
-                                            </div>
+                                            </div> -->
+                                            <form class="example-form">
+                                                <mat-form-field class="example-full-width">
+                                                    <span matPrefix><i class="fa fa-eur"></i> &nbsp;</span>
+                                                    <input matInput placeholder="{{ 'Enter Price' | translate }}">
+                                                </mat-form-field>
+
+                                            </form>
                                         </form>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <h3 class="label-style">{{ 'Unit' | translate }}</h3>
-                                            <select class="form-control">
+                                            <!-- <select class="form-control">
                                                 <option>1</option>
                                                 <option>2</option>
                                                 <option>3</option>
                                                 <option>4</option>
                                                 <option>5</option>
-                                            </select>
+                                            </select> -->
+                                            <mat-form-field>
+                                                <mat-select matNativeControl required>
+                                                    <mat-option value="1">1</mat-option>
+                                                    <mat-option value="2">2</mat-option>
+                                                    <mat-option value="3">3</mat-option>
+                                                    <mat-option value="4">4</mat-option>
+                                                    <mat-option value="5">5</mat-option>
+                                                </mat-select>
+                                            </mat-form-field>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
-                                        <form role="form">
+                                        <h3 class="label-style">{{ 'Quantity' | translate }}</h3>
+                                        <!-- <form role="form">
                                             <fieldset class="form-group">
                                                 <h3 class="label-style">{{ 'Quantity' | translate }}</h3>
                                                 <input class="form-control">
                                             </fieldset>
+                                        </form> -->
+                                        <form class="example-form">
+                                            <mat-form-field class="example-full-width">
+                                                <input matInput>
+                                            </mat-form-field>
+
                                         </form>
                                     </div>
                                 </div>
@@ -87,7 +126,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-center">
+                    <!-- <div class="d-flex justify-content-center">
                         <div class="col-xl-3 text-xs-center">
                             <button type="submit" class="btn themeBtnColor" [routerLink]="['/create-offer']">&lt; {{
                                 'Back' | translate }} </button>
@@ -98,6 +137,21 @@
                         </div>
                         <div class="col-xl-3 text-xs-center">
                             <button type="submit" class="btn themeBtnColor">{{ 'Cancel' | translate }}</button>
+                        </div>
+                    </div> -->
+                    <div>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn backBtn" [routerLink]="['/create-offer']">{{
+                                'Back' | translate }}</button>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn themeBtnColor" [routerLink]="['/create-offer-step3']">{{
+                                'Next' | translate }} &gt; </button>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <!-- <button type="submit" class="btn themeBtnColor">{{ 'Cancel' |
+                                    translate }}</button> -->
+                            <button mat-button class="cancelBtn">{{ 'Cancel' |translate }}</button>
                         </div>
                     </div>
                 </div>

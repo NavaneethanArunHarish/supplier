@@ -1,5 +1,7 @@
 .headerGray {
-    color: #868e96 !important;
+    color:#9FA4AD;
+    font-size: 14px;
+    font-family: Muli, Bold
 }
 
 .headerleft {
@@ -16,10 +18,16 @@
     border-color:#FF7800;
     margin: 5px;
     color:#fff;
+    height:50px;
+    width:200px;
+    font-size: 14px;
+    font-family: Muli, Semi Bold
 }
 
 .themeLabelColor {
     color:#FF7800;
+    font-size: 14px;
+    font-family: Muli, Bold
 }
 
 .borderless td, .borderless th {
@@ -30,26 +38,36 @@
     display:inline-block;
 }
 
+.create-offer {
+    color: #2D3A4C;
+    font-size: 20px;
+    font-family: Muli, SemiBold;
+}
+
 .tableHeader {
     color:#BABEC5;
     font-size: 12px;
+    font-family: Muli, Bold;
 }
 
 .tableBody {
     color: #424D5D;
     font-size: 14px;
+    font-family: Muli, SemiBold;
 }
 
 .step-align {
     text-align: center;
     color:#2D3A4C;
     font-size: 14px;
+    font-family: Muli, Bold;
 }
 
 .catalog-align {
     text-align: center;
     color:#BABEC5;
     font-size: 12px;
+    font-family: Muli, Light;
 }
 
 .avatar {
@@ -62,4 +80,5 @@
 .product-style {
     color: #2D3A4C;
     font-size: 14px;
+    font-family: Muli, Regular;
 }
