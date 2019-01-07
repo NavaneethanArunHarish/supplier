@@ -26,7 +26,7 @@
 .tableHeader {
     color:#BABEC5;
     font-size: 12px;
-    font-family: Muli, Bold;
+    //font-family: Muli, Bold;
 }
 
 .tableHeaderColor {
@@ -38,7 +38,7 @@
 .tableBody {
     color: #424D5D;
     font-size: 14px;
-    font-family: Muli, SemiBold;
+    //font-family: Muli, SemiBold;
 }
 
 .tableBodyColor {
@@ -51,7 +51,7 @@
     text-align: center;
     color:#2D3A4C;
     font-size: 14px;
-    font-family: Muli, Bold;
+    //font-family: Muli, Bold;
 }
 
 .example-form {
@@ -68,7 +68,7 @@
     text-align: center;
     color:#BABEC5;
     font-size: 12px;
-    font-family: Muli, Light;
+    //font-family: Muli, Light;
 }
 
 .avatar {
@@ -86,7 +86,7 @@
 .label-style {
     color:#2D3A4C;
     font-size: 14px;
-    font-family: Muli, Bold;
+    //font-family: Muli, Bold;
 }
 
 .themeBtnColor {
@@ -97,7 +97,7 @@
     height:50px;
     width:200px;
     font-size: 14px;
-    font-family: Muli, SemiBold;
+    //font-family: Muli, SemiBold;
 }
 
 .cancelBtn {
@@ -105,7 +105,7 @@
     width:200px;
     color:#C9CBD0;
     font-size: 14px;
-    font-family: Muli, SemiBold;
+    //font-family: Muli, SemiBold;
 }
 
 .backBtn {
@@ -116,7 +116,7 @@
     margin: 10px;
     color:#fff;
     font-size: 14px;
-    font-family: Muli, SemiBold;
+    //font-family: Muli, SemiBold;
 }
 
 .slider-div {
@@ -131,3 +131,25 @@
 .inlineBlock {
     display:inline-block;
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    .discount-width {
+        width: 340px;
+    }
+
+    .tableHeader {
+        color:#BABEC5;
+        font-size: 12px;
+        //font-family: Muli, Bold;
+        width:100px;
+        border: 2px solid #FF7800;
+    }
+    
+    .tableBody {
+        color: #424D5D;
+        font-size: 14px;
+        //font-family: Muli, SemiBold;
+        width:100px;
+    }
+  }

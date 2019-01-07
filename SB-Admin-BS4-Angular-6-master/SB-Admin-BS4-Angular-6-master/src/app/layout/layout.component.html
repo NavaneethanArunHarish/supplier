@@ -32,8 +32,8 @@
           </tbody>
         </table>
       </div> -->
-      <div class="row">
-        <div class="div-align cursor py-3" [style.border-top]="offerColor" [style.background-color]="offerBg" (click)="offer()" [routerLink]="['/offers']">
+      <div class="row gray-color">
+        <div class="div-align cursor py-3" [style.border-top]="offerColor" [style.background-color]="offerBg" (click)="offer()">
           <img src="../../assets/images/Components/ic_offers_tab_active.png" class="img-responsive"><br />
           <h3 class="header-label">{{ 'Offer' | translate }}</h3>
         </div>
@@ -41,7 +41,7 @@
           <img src="../../assets/images/Components/ic_orders_tab_active.png" class="img-responsive"><br />
           <h3 class="header-label">{{ 'Order' | translate }}</h3>
         </div>
-        <div class="div-align cursor py-3" [style.border-top]="archiveColor" [style.background-color]="archiveBg" (click)="archive()" [routerLink]="['/archive']">
+        <div class="div-align cursor py-3" [style.border-top]="archiveColor" [style.background-color]="archiveBg" (click)="archive()">
           <img src="../../assets/images/Components/ic_archive_tab_active.png" class="img-responsive"><br />
           <h3 class="header-label">{{ 'Archive' | translate }}</h3>
         </div>

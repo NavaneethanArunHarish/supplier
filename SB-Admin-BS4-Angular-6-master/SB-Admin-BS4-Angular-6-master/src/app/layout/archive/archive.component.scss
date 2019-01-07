@@ -1,7 +1,7 @@
 .headerGray {
     color: #838A95 !important;
     font-size: 14px;
-    font-family: Muli, Regular;
+    //font-family: Muli, Regular;
 }
 
 .headerleft {
@@ -12,25 +12,25 @@
 .themeLabelColor {
     color:#FF7800;
     font-size: 14px;
-    font-family: Muli, Regular;
+    //font-family: Muli, Regular;
 }
 
 .filter-label{
     color:#9FA4AD;
     font-size: 12px;
-    font-family: Muli, Regular;
+    //font-family: Muli, Regular;
 }
 
 .filter-header{
     color:#2D3A4C;
     font-size: 12px;
-    font-family: Muli, Bold;
+    //font-family: Muli, Bold;
 }
 
 .archive-label {
     font-size: 20px;
     color:#2D3A4C;
-    font-family: Muli, SemiBold;
+    //font-family: Muli, SemiBold;
 }
 
 .avatar {
@@ -44,26 +44,26 @@
     margin-top: 8px;
     color:#283245;
     font-size:14px;
-    font-family: Muli, Bold;
+    //font-family: Muli, Bold;
 }
 
 .reset-label{
     color:#C9CBD0;
     font-size: 14px;
-    font-family: Muli, Bold;
+    //font-family: Muli, Bold;
 }
 
 .apply-label{
     color:#FF7800;
     font-size: 14px;
-    font-family: Muli, Bold;
+    //font-family: Muli, Bold;
 }
 
 .filter-align {
     margin-top:6px;
     color:#2D3A4C;
     font-size: 14px;
-    font-family: Muli, Regular;
+    //font-family: Muli, Regular;
 }
 
 .filter-img-align {
@@ -73,7 +73,7 @@
 .offer-label {
     color:#9FA4AD;
     font-size:12px;
-    font-family: Muli, Regular;
+    //font-family: Muli, Regular;
 }
 
 .img-align {
@@ -91,11 +91,25 @@
 .tableHeader {
     color:#BABEC5;
     font-size: 12px;
-    font-family: Muli, Bold;
+    //font-family: Muli, Bold;
 }
 
 .tableBody {
     color: #424D5D;
     font-size: 14px;
-    font-family: Muli, SemiBold;
+    //font-family: Muli, SemiBold;
+}
+
+.on-going {
+    border-bottom: 2px solid #FF7800;
+    margin-top: 2px;
+}
+
+.gray-color {
+    border-bottom: 2px solid #D7D8DC;
+    height: 32px;
+}
+
+.onGoing-label {
+    font-size: 14px;
 }

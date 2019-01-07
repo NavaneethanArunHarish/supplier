@@ -58,7 +58,7 @@
                                             <div class="row">
                                                 <div class="col-lg-6 margin-align">
                                                     <h3 class="table-Body">{{ 'Start Date' | translate }}</h3>
-                                                    <mat-form-field>
+                                                    <mat-form-field class="picker-width">
                                                         <input matInput [matDatepicker]="picker" placeholder="Choose a date">
                                                         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                                                         <mat-datepicker #picker></mat-datepicker>
@@ -67,7 +67,7 @@
                                                 </div>
                                                 <div class="col-lg-6 margin-align">
                                                     <h3 class="table-Body">{{ 'End Date' | translate }}</h3>
-                                                    <mat-form-field>
+                                                    <mat-form-field class="picker-width">
                                                         <input matInput [matDatepicker]="picker1" placeholder="Choose a date">
                                                         <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
                                                         <mat-datepicker #picker1></mat-datepicker>

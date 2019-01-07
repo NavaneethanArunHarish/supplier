@@ -14,25 +14,25 @@
 .tableHeader {
     color: #838A95 !important;
     font-size: 12px;
-    font-family: Muli, Light;
+    //font-family: Muli, Light;
 }
 
 .table-Header {
     color: #BABEC5 !important;
     font-size: 12px;
-    font-family: Muli, Bold;
+    //font-family: Muli, Bold;
 }
 
 .content-label {
     color: #283245 !important;
     font-size: 14px;
-    font-family: Muli, Bold;
+    //font-family: Muli, Bold;
 }
 
 .header-label {
     color: #2D3A4C !important;
     font-size: 20px;
-    font-family: Muli, SemiBold;
+    //font-family: Muli, SemiBold;
 }
 
 .themeLabelColor {
@@ -47,13 +47,13 @@
     height:50px;
     width:200px;
     font-size: 14px;
-    font-family: Muli, SemiBold;
+    //font-family: Muli, SemiBold;
 }
 
 .quantity-label {
     color:#424D5D;
     font-size: 14px;
-    font-family: Muli, SemiBold;
+    //font-family: Muli, SemiBold;
 }
 
 .cancelBtn {
@@ -61,7 +61,7 @@
     width:200px;
     color:#C9CBD0;
     font-size: 14px;
-    font-family: Muli, SemiBold;
+    //font-family: Muli, SemiBold;
 }
 
 .headerleft {
@@ -81,7 +81,7 @@
 .comp-label {
     color: #2D3A4C !important;
     font-size: 14px;
-    font-family: Muli, Bold;
+    //font-family: Muli, Bold;
 }
 
 .example-form {
@@ -92,6 +92,13 @@
   
   .example-full-width {
     width: 100%;
+  }
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    .discount-width {
+        width: 345px;
+    }
   }
 
 

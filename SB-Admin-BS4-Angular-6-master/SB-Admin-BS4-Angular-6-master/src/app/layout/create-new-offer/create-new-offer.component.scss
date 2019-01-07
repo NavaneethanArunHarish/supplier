@@ -1,7 +1,7 @@
 .headerGray {
     color:#9FA4AD;
     font-size: 14px;
-    font-family: Muli, Bold
+    //font-family: Muli, Bold
 }
 
 .headerleft {
@@ -21,13 +21,13 @@
     height:50px;
     width:200px;
     font-size: 14px;
-    font-family: Muli, Semi Bold
+    //font-family: Muli, Semi Bold
 }
 
 .themeLabelColor {
     color:#FF7800;
     font-size: 14px;
-    font-family: Muli, Bold
+    //font-family: Muli, Bold
 }
 
 .borderless td, .borderless th {
@@ -41,44 +41,53 @@
 .create-offer {
     color: #2D3A4C;
     font-size: 20px;
-    font-family: Muli, SemiBold;
+    //font-family: Muli, SemiBold;
 }
 
 .tableHeader {
     color:#BABEC5;
     font-size: 12px;
-    font-family: Muli, Bold;
+    //font-family: Muli, Bold;
 }
 
 .tableBody {
     color: #424D5D;
     font-size: 14px;
-    font-family: Muli, SemiBold;
+    //font-family: Muli, SemiBold;
 }
 
 .step-align {
     text-align: center;
     color:#2D3A4C;
     font-size: 14px;
-    font-family: Muli, Bold;
+    //font-family: Muli, Bold;
 }
 
 .catalog-align {
     text-align: center;
     color:#BABEC5;
     font-size: 12px;
-    font-family: Muli, Light;
+    //font-family: Muli, Light;
 }
 
 .avatar {
     vertical-align: middle;
-    width: 100px;
-    height: 100px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
+}
+
+.card-width {
+    width: 100px;
+    height: 90px;
+    padding:5px;
+    border:1px solid #9FA4AD;
+    margin: 5px;
+
 }
 
 .product-style {
     color: #2D3A4C;
     font-size: 14px;
-    font-family: Muli, Regular;
+    //font-family: Muli, Regular;
 }
