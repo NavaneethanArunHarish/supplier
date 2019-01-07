@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
                 let loginData = new Login();
                 loginData = loginStatus;
                 localStorage.setItem('jwtToken', loginData.data.jwt);
-                this.router.navigate(['/dashboard']);
+                this.router.navigate(['/offers']);
             },
                 err => {
                     console.log('err:', err);
