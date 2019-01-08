@@ -20,6 +20,7 @@ export class OfferComponent implements OnInit {
   }
 
   ngOnInit() {
+    window.scroll(0,0);
     this.myWidth = window.innerWidth;
     this.myHeight = window.innerHeight;
     console.log("width:" + this.myWidth);

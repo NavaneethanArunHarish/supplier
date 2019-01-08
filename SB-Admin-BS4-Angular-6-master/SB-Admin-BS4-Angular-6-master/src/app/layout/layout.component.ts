@@ -21,6 +21,7 @@ export class LayoutComponent implements OnInit {
     constructor(public router: Router) { }
 
     ngOnInit() {
+        window.scroll(0,0);
         this.myWidth = window.innerWidth;
         this.footer();
     }

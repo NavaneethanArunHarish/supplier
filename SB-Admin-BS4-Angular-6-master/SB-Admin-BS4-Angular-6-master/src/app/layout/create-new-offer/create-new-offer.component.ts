@@ -16,6 +16,7 @@ export class CreateNewOfferComponent implements OnInit {
   constructor(private modalService: NgbModal, private dashboardService: DashboardService) { }
 
   ngOnInit() {
+    window.scroll(0,0);
     this.getProducts();
   }
 

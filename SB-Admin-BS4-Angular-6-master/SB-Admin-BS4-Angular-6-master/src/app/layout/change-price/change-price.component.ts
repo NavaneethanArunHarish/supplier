@@ -13,5 +13,6 @@ export class ChangePriceComponent implements OnInit {
     }
 
     ngOnInit() {
+        window.scroll(0,0);
     }
 }

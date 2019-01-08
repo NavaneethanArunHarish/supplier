@@ -11,6 +11,7 @@ export class SidebarComponent {
     isActive: boolean = false;
     collapsed: boolean = false;
     showMenu: string = '';
+    myWidth: any;
     pushRightClass: string = 'push-right';
 
     @Output() collapsedEvent = new EventEmitter<boolean>();
@@ -30,6 +31,10 @@ export class SidebarComponent {
                 this.toggleSidebar();
             }
         });
+    }
+
+    ngOnInit() {
+        this.myWidth = window.innerWidth;
     }
 
     eventCalled() {
